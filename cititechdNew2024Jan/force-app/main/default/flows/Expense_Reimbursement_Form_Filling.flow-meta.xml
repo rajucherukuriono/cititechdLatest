@@ -1,0 +1,1718 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <decisions>
+        <name>Copy_1_of_If_Pricebook_is_Veracast_Bank_of_America_OEConference_Custom_Price_Boo</name>
+        <label>If Pricebook is Veracast OEConference Standard Price Book</label>
+        <locationX>4009</locationX>
+        <locationY>1835</locationY>
+        <defaultConnector>
+            <targetReference>If_Pricebook_is_Wells_Fargo_OEConference_Custom_Price_Book</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Copy_14_of_Yes</name>
+            <conditionLogic>1 AND (2 OR 3 OR 4)</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Pricebook2.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Veracast OEConference Standard Price Book</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Hybrid_Event__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Yes</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Hybrid_Event__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Yes (OE Staff On-Site)</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Hybrid_Event__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Yes (No OE Staff On-Site)</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Expense_Reimbursement_Form_URL13</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>If_Pricebook_is_Barclays_OEConnect_Custom_Price_Book</name>
+        <label>If Pricebook is Barclays OEConnect Custom Price Book</label>
+        <locationX>5593</locationX>
+        <locationY>2483</locationY>
+        <defaultConnector>
+            <targetReference>If_Pricebook_is_GCS_Earnings_Plus_Package_Four_Pack</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Copy_20_of_Yes</name>
+            <conditionLogic>1 AND (2 OR 3 OR 4)</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Pricebook2.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Barclays OEConnect Custom Price Book</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Hybrid_Event__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Yes</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Hybrid_Event__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Yes (OE Staff On-Site)</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Hybrid_Event__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Yes (No OE Staff On-Site)</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Copy_8_of_Update_Expense_Reimbursement_Form_URL</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>If_Pricebook_is_Buy_Side_Standard_Price_Book</name>
+        <label>If Pricebook is  Buy Side Standard Price Book</label>
+        <locationX>6897</locationX>
+        <locationY>3023</locationY>
+        <defaultConnector>
+            <targetReference>If_Pricebook_is_GCS_Earnings_Enhanced_Package</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Copy_25_of_Yes</name>
+            <conditionLogic>1 AND (2 OR 3 OR 4)</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Pricebook2.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Buy Side Standard Price Book</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Hybrid_Event__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Yes</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Hybrid_Event__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Yes (OE Staff On-Site)</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Hybrid_Event__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Yes (No OE Staff On-Site)</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>copyUpdate_Expense_Reimbursement_Form_URL</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>If_Pricebook_is_Citi_OEConference_Custom_Price_Book</name>
+        <label>If Pricebook is Citi OEConference Custom Price Book</label>
+        <locationX>313</locationX>
+        <locationY>323</locationY>
+        <defaultConnector>
+            <targetReference>If_Pricebook_is_Corporate_Services_Standard_Price_Book</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Yes</name>
+            <conditionLogic>1 AND (2 OR 3 OR 4)</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Pricebook2.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Citi OEConference Custom Price Book</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Hybrid_Event__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Yes</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Hybrid_Event__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Yes (OE Staff On-Site)</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Hybrid_Event__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Yes (No OE Staff On-Site)</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Expense_Reimbursement_Form_URL</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>If_Pricebook_is_Citi_OEConference_Discounted_2023_Only_Price_Book</name>
+        <label>If Pricebook is Citi OEConference Discounted 2023 Only Price Book</label>
+        <locationX>4801</locationX>
+        <locationY>2159</locationY>
+        <defaultConnector>
+            <targetReference>If_Pricebook_is_GCS_Investor_Day_Standard_Package</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Copy_17_of_Yes</name>
+            <conditionLogic>1 AND (2 OR 3 OR 4)</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Pricebook2.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Citi OEConference Discounted 2023 Only Price Book</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Hybrid_Event__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Yes</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Hybrid_Event__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Yes (OE Staff On-Site)</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Hybrid_Event__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Yes (No OE Staff On-Site)</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Copy_4_of_Update_Expense_Reimbursement_Form_URL</targetReference>
+            </connector>
+            <label>yes</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>If_Pricebook_is_Citi_OEConnect_Discounted_2023_Only_Price_Book</name>
+        <label>If Pricebook is Citi OEConnect Discounted 2023 Only Price Book</label>
+        <locationX>4537</locationX>
+        <locationY>2051</locationY>
+        <defaultConnector>
+            <targetReference>If_Pricebook_is_Citi_OEConference_Discounted_2023_Only_Price_Book</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Copy_15_of_Yes</name>
+            <conditionLogic>1 AND (2 OR 3 OR 4)</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Pricebook2.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Citi OEConnect Discounted 2023 Only Price Book</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Hybrid_Event__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Yes</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Hybrid_Event__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Yes (OE Staff On-Site)</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Hybrid_Event__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Yes (No OE Staff On-Site)</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Expense_Reimbursement_Form_URL_copy6</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>If_Pricebook_is_Corporate_Services_Standard_Price_Book</name>
+        <label>If Pricebook is Corporate Services Standard Price Book</label>
+        <locationX>577</locationX>
+        <locationY>431</locationY>
+        <defaultConnector>
+            <targetReference>If_Pricebook_is_Credit_Suisse_OEConference_Custom_Price_Book</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Copy_1_of_Yes</name>
+            <conditionLogic>1 AND (2 OR 3 OR 4)</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Pricebook2.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Corporate Services Standard Price Book</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Hybrid_Event__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Yes</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Hybrid_Event__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Yes (OE Staff On-Site)</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Hybrid_Event__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Yes (No OE Staff On-Site)</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Expense_Reimbursement_Form_URL1</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>If_Pricebook_is_Credit_Suisse_OEConference_Custom_Price_Book</name>
+        <label>If Pricebook is Credit Suisse OEConference Custom Price Book</label>
+        <locationX>841</locationX>
+        <locationY>539</locationY>
+        <defaultConnector>
+            <targetReference>If_Pricebook_is_GCS_Earnings_Enhanced_Package_Four_Pack</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Copy_2_of_Yes</name>
+            <conditionLogic>1 AND (2 OR 3 OR 4)</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Pricebook2.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Credit Suisse OEConference Custom Price Book</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Hybrid_Event__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Yes</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Hybrid_Event__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Yes (OE Staff On-Site)</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Hybrid_Event__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Yes (No OE Staff On-Site)</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Expense_Reimbursement_Form_URL2</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>If_Pricebook_is_GCS_Earnings_Enhanced_Package</name>
+        <label>If Pricebook is GCS Earnings - Enhanced Package</label>
+        <locationX>7145</locationX>
+        <locationY>3131</locationY>
+        <defaultConnector>
+            <targetReference>If_Pricebook_is_J_P_Morgan_AMER_EMEA_OEConnect_Custom_Price_Book</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Copy_26_of_Yes</name>
+            <conditionLogic>1 AND (2 OR 3 OR 4)</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Pricebook2.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>GCS Earnings - Enhanced Package</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Hybrid_Event__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Yes</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Hybrid_Event__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Yes (OE Staff On-Site)</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Hybrid_Event__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Yes (No OE Staff On-Site)</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Copy_11_of_Update_Expense_Reimbursement_Form_URL</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>If_Pricebook_is_GCS_Earnings_Enhanced_Package_Four_Pack</name>
+        <label>If Pricebook is GCS Earnings - Enhanced Package Four-Pack</label>
+        <locationX>1105</locationX>
+        <locationY>647</locationY>
+        <defaultConnector>
+            <targetReference>If_Pricebook_is_GCS_Investor_Day_Plus_Package</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Copy_3_of_Yes</name>
+            <conditionLogic>1 AND (2 OR 3 OR 4)</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Pricebook2.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>GCS Earnings - Enhanced Package Four-Pack</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Hybrid_Event__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Yes</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Hybrid_Event__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Yes (OE Staff On-Site)</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Hybrid_Event__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Yes (No OE Staff On-Site)</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Expense_Reimbursement_Form_URL3</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>If_Pricebook_is_GCS_Earnings_Plus_Package_Four_Pack</name>
+        <label>If Pricebook is GCS Earnings - Plus Package Four-Pack</label>
+        <locationX>5856</locationX>
+        <locationY>2591</locationY>
+        <defaultConnector>
+            <targetReference>If_Pricebook_is_Morgan_Stanley_OEConference_Custom_Price_Book</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Copy_21_of_Yes</name>
+            <conditionLogic>1 AND (2 OR 3 OR 4)</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Pricebook2.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>GCS Earnings - Plus Package Four-Pack</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Hybrid_Event__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Yes</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Hybrid_Event__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Yes (OE Staff On-Site)</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Hybrid_Event__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Yes (No OE Staff On-Site)</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Copy_9_of_Update_Expense_Reimbursement_Form_URL</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>If_Pricebook_is_GCS_Investor_Day_Plus_Package</name>
+        <label>If Pricebook is GCS Investor Day - Plus Package</label>
+        <locationX>1369</locationX>
+        <locationY>755</locationY>
+        <defaultConnector>
+            <targetReference>If_Pricebook_is_Investec_OEConference_Custom_Price_Book</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Copy_4_of_Yes</name>
+            <conditionLogic>1 AND (2 OR 3 OR 4)</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Pricebook2.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>GCS Investor Day - Plus Package</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Hybrid_Event__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Yes</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Hybrid_Event__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Yes (OE Staff On-Site)</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Hybrid_Event__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Yes (No OE Staff On-Site)</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Expense_Reimbursement_Form_URL4</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>If_Pricebook_is_GCS_Investor_Day_Premium_Package</name>
+        <label>If Pricebook is GCS Investor Day - Premium Package</label>
+        <locationX>5329</locationX>
+        <locationY>2375</locationY>
+        <defaultConnector>
+            <targetReference>If_Pricebook_is_Barclays_OEConnect_Custom_Price_Book</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Copy_19_of_Yes</name>
+            <conditionLogic>1 AND (2 OR 3 OR 4)</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Pricebook2.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>GCS Investor Day - Premium Package</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Hybrid_Event__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Yes</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Hybrid_Event__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Yes (OE Staff On-Site)</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Hybrid_Event__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Yes (No OE Staff On-Site)</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Copy_7_of_Update_Expense_Reimbursement_Form_URL</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>If_Pricebook_is_GCS_Investor_Day_Standard_Package</name>
+        <label>If Pricebook is GCS Investor Day - Standard Package</label>
+        <locationX>5065</locationX>
+        <locationY>2267</locationY>
+        <defaultConnector>
+            <targetReference>If_Pricebook_is_GCS_Investor_Day_Premium_Package</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Copy_18_of_yes</name>
+            <conditionLogic>1 AND (2 OR 3 OR 4)</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Pricebook2.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>GCS Investor Day - Standard Package</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Hybrid_Event__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Yes</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Hybrid_Event__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Yes (OE Staff On-Site)</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Hybrid_Event__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Yes (No OE Staff On-Site)</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Copy_6_of_Update_Expense_Reimbursement_Form_URL</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>If_Pricebook_is_GCS_Marketing_KOL_R_D_Event_Package</name>
+        <label>If Pricebook is GCS Marketing/KOL/R&amp;D Event - Package</label>
+        <locationX>6641</locationX>
+        <locationY>2915</locationY>
+        <defaultConnector>
+            <targetReference>If_Pricebook_is_Buy_Side_Standard_Price_Book</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Copy_24_of_Yes</name>
+            <conditionLogic>1 AND (2 OR 3 OR 4)</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Pricebook2.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>GCS Marketing/KOL/R&amp;D Event - Package</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Hybrid_Event__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Yes</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Hybrid_Event__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Yes (OE Staff On-Site)</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Hybrid_Event__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Yes (No OE Staff On-Site)</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Copy_1_of_Copy_10_of_Update_Expense_Reimbursement_Form_URL</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>If_Pricebook_is_Investec_OEConference_Custom_Price_Book</name>
+        <label>If Pricebook is Investec OEConference Custom Price Book</label>
+        <locationX>1633</locationX>
+        <locationY>863</locationY>
+        <defaultConnector>
+            <targetReference>If_Pricebook_is_LSEG_Standard_Corporate_Services_Price_Book</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Copy_5_of_Yes</name>
+            <conditionLogic>1 AND (2 OR 3 OR 4)</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Pricebook2.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Investec OEConference Custom Price Book</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Hybrid_Event__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Yes</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Hybrid_Event__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Yes (OE Staff On-Site)</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Hybrid_Event__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Yes (No OE Staff On-Site)</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Expense_Reimbursement_Form_URL6</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>If_Pricebook_is_J_P_Morgan_AMER_EMEA_OEConnect_Custom_Price_Book</name>
+        <label>If Pricebook is J.P. Morgan AMER/EMEA OEConnect Custom Price Book</label>
+        <locationX>7376</locationX>
+        <locationY>3239</locationY>
+        <defaultConnector>
+            <targetReference>If_Pricebook_is_RBC_OEConnect_Custom_Price_Book</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Copy_27_of_Yes</name>
+            <conditionLogic>1 AND (2 OR 3 OR 4)</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Pricebook2.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>J.P. Morgan AMER/EMEA OEConnect Custom Price Book</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Hybrid_Event__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Yes</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Hybrid_Event__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Yes (OE Staff On-Site)</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Hybrid_Event__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Yes (No OE Staff On-Site)</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Copy_12_of_Update_Expense_Reimbursement_Form_URL</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>If_Pricebook_is_LSEG_Standard_Corporate_Services_Price_Book</name>
+        <label>*SKIP*If Pricebook is LSEG Standard Corporate Services Price Book</label>
+        <locationX>1897</locationX>
+        <locationY>971</locationY>
+        <defaultConnector>
+            <targetReference>If_Pricebook_is_LSEG_Standard_OEConnect_Price_Book</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Copy_6_of_Yes</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Pricebook2.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>LSEG Standard Corporate Services Price Book</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Hybrid_Event__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Yes</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Description</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>SKIP FOR UNIVERSAL PRICING</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Copy_1_of_Update_Expense_Reimbursement_Form_URL</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>If_Pricebook_is_LSEG_Standard_OEConnect_Price_Book</name>
+        <label>*SKIP*If Pricebook is LSEG Standard OEConnect Price Book</label>
+        <locationX>2161</locationX>
+        <locationY>1079</locationY>
+        <defaultConnector>
+            <targetReference>If_Pricebook_is_OEConference_Standard_Price_Book</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Copy_7_of_Yes</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Pricebook2.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>LSEG Standard OEConnect Price Book</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Hybrid_Event__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Yes</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Description</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>SKIP FOR UNIVERSAL PRICING</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Expense_Reimbursement_Form_URL7</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>If_Pricebook_is_LSEG_Universal_Pricing_2023_Price_Book</name>
+        <label>If Pricebook is LSEG Universal Pricing 2023 Price Book</label>
+        <locationX>6381</locationX>
+        <locationY>2807</locationY>
+        <defaultConnector>
+            <targetReference>If_Pricebook_is_GCS_Marketing_KOL_R_D_Event_Package</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Copy_23_of_Yes</name>
+            <conditionLogic>1 AND (2 OR 3 OR 4)</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Pricebook2.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>LSEG Universal Pricing 2023 Price Book</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Hybrid_Event__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Yes</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Hybrid_Event__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Yes (OE Staff On-Site)</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Hybrid_Event__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Yes (No OE Staff On-Site)</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Copy_10_of_Update_Expense_Reimbursement_Form_URL</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>If_Pricebook_is_Morgan_Stanley_OEConference_Custom_Price_Book</name>
+        <label>If Pricebook is Morgan Stanley OEConference Custom Price Book</label>
+        <locationX>6119</locationX>
+        <locationY>2699</locationY>
+        <defaultConnector>
+            <targetReference>If_Pricebook_is_LSEG_Universal_Pricing_2023_Price_Book</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Copy_22_of_Yes</name>
+            <conditionLogic>1 AND (2 OR 3 OR 4)</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Pricebook2.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Morgan Stanley OEConference Custom Price Book</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Hybrid_Event__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Yes</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Hybrid_Event__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Yes (OE Staff On-Site)</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Hybrid_Event__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Yes (No OE Staff On-Site)</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Expense_Reimbursement_Form_URLcopy</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>If_Pricebook_is_OEConference_Standard_Price_Book</name>
+        <label>If Pricebook is OEConference Standard Price Book</label>
+        <locationX>2425</locationX>
+        <locationY>1187</locationY>
+        <defaultConnector>
+            <targetReference>If_Pricebook_is_OEConnect_Standard_Price_Book</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Copy_8_of_Yes</name>
+            <conditionLogic>1 AND (2 OR 3 OR 4)</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Pricebook2.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>OEConference Standard Price Book</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Hybrid_Event__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Yes</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Hybrid_Event__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Yes (OE Staff On-Site)</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Hybrid_Event__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Yes (No OE Staff On-Site)</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Expense_Reimbursement_Form_URL8</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>If_Pricebook_is_OEConnect_Standard_Price_Book</name>
+        <label>If Pricebook is OEConnect Standard Price Book</label>
+        <locationX>2689</locationX>
+        <locationY>1295</locationY>
+        <defaultConnector>
+            <targetReference>If_Pricebook_is_RBC_OEConference_Custom_Price_Book</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Copy_9_of_Yes</name>
+            <conditionLogic>1 AND (2 OR 3 OR 4)</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Pricebook2.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>OEConnect Standard Price Book</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Hybrid_Event__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Yes</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Hybrid_Event__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Yes (OE Staff On-Site)</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Hybrid_Event__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Yes (No OE Staff On-Site)</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Copy_2_of_Update_Expense_Reimbursement_Form_URL</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>If_Pricebook_is_RBC_OEConference_Custom_Price_Book</name>
+        <label>If Pricebook is RBC OEConference Custom Price Book</label>
+        <locationX>2953</locationX>
+        <locationY>1403</locationY>
+        <defaultConnector>
+            <targetReference>If_Pricebook_is_UBS_OEConference_Custom_Price_Book</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Copy_10_of_Yes</name>
+            <conditionLogic>1 AND (2 OR 3 OR 4)</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Pricebook2.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>RBC OEConference Custom Price Book</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Hybrid_Event__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Yes</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Hybrid_Event__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Yes (OE Staff On-Site)</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Hybrid_Event__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Yes (No OE Staff On-Site)</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Expense_Reimbursement_Form_URL10</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>If_Pricebook_is_RBC_OEConnect_Custom_Price_Book</name>
+        <label>If Pricebook is RBC OEConnect Custom Price Book</label>
+        <locationX>7574</locationX>
+        <locationY>3347</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Copy_28_of_Yes</name>
+            <conditionLogic>1 AND (2 OR 3 OR 4)</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Pricebook2.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>RBC OEConnect Custom Price Book</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Hybrid_Event__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Yes</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Hybrid_Event__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Yes (OE Staff On-Site)</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Hybrid_Event__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Yes (No OE Staff On-Site)</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Copy_13_of_Update_Expense_Reimbursement_Form_URL</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>If_Pricebook_is_UBS_OEConference_Custom_Price_Book</name>
+        <label>If Pricebook is UBS OEConference Custom Price Book</label>
+        <locationX>3217</locationX>
+        <locationY>1511</locationY>
+        <defaultConnector>
+            <targetReference>If_Pricebook_is_UBS_OEConnect_Custom_Price_Book</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Copy_11_of_Yes</name>
+            <conditionLogic>1 AND (2 OR 3 OR 4)</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Pricebook2.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>UBS OEConference Custom Price Book</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Hybrid_Event__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Yes</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Hybrid_Event__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Yes (OE Staff On-Site)</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Hybrid_Event__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Yes (No OE Staff On-Site)</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Copy_3_of_Update_Expense_Reimbursement_Form_URL</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>If_Pricebook_is_UBS_OEConnect_Custom_Price_Book</name>
+        <label>If Pricebook is UBS OEConnect Custom Price Book</label>
+        <locationX>3481</locationX>
+        <locationY>1619</locationY>
+        <defaultConnector>
+            <targetReference>If_Pricebook_is_Veracast_Bank_of_America_OEConference_Custom_Price_Book</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Copy_12_of_Yes</name>
+            <conditionLogic>1 AND (2 OR 3 OR 4)</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Pricebook2.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>UBS OEConnect Custom Price Book</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Hybrid_Event__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Yes</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Hybrid_Event__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Yes (OE Staff On-Site)</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Hybrid_Event__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Yes (No OE Staff On-Site)</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Expense_Reimbursement_Form_URL11</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>If_Pricebook_is_Veracast_Bank_of_America_OEConference_Custom_Price_Book</name>
+        <label>If Pricebook is Veracast Bank of America OEConference Custom Price Book</label>
+        <locationX>3745</locationX>
+        <locationY>1727</locationY>
+        <defaultConnector>
+            <targetReference>Copy_1_of_If_Pricebook_is_Veracast_Bank_of_America_OEConference_Custom_Price_Boo</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Copy_13_of_Yes</name>
+            <conditionLogic>1 AND (2 OR 3 OR 4)</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Pricebook2.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Veracast Bank of America OEConference Custom Price Book</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Hybrid_Event__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Yes</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Hybrid_Event__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Yes (OE Staff On-Site)</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Hybrid_Event__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Yes (No OE Staff On-Site)</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Expense_Reimbursement_Form_URL12</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>If_Pricebook_is_Wells_Fargo_OEConference_Custom_Price_Book</name>
+        <label>If Pricebook is Wells Fargo OEConference Custom Price Book</label>
+        <locationX>4273</locationX>
+        <locationY>1943</locationY>
+        <defaultConnector>
+            <targetReference>If_Pricebook_is_Citi_OEConnect_Discounted_2023_Only_Price_Book</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Copy_16_of_Yes</name>
+            <conditionLogic>1 AND (2 OR 3 OR 4)</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Pricebook2.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Wells Fargo OEConference Custom Price Book</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Hybrid_Event__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Yes</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Hybrid_Event__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Yes (OE Staff On-Site)</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Hybrid_Event__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Yes (No OE Staff On-Site)</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Copy_5_of_Update_Expense_Reimbursement_Form_URL</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <description>Updating RBC OE Connect</description>
+    <interviewLabel>Expense {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Expense Reimbursement Form Filling</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Copy_10_of_Update_Expense_Reimbursement_Form_URL</name>
+        <label>Update Expense Reimbursement Form URL</label>
+        <locationX>6122</locationX>
+        <locationY>2915</locationY>
+        <inputAssignments>
+            <field>Expense_Reimbursement_Form_URL__c</field>
+            <value>
+                <stringValue>https://openexchangeinc.formstack.com/forms/lseg_universal_pricing_all_business_lines</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Copy_11_of_Update_Expense_Reimbursement_Form_URL</name>
+        <label>Update Expense Reimbursement Form URL</label>
+        <locationX>6914</locationX>
+        <locationY>3239</locationY>
+        <inputAssignments>
+            <field>Expense_Reimbursement_Form_URL__c</field>
+            <value>
+                <stringValue>https://openexchangeinc.formstack.com/forms/expense_reimbursement_form_gcs_earnings_enhanced_package</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Copy_12_of_Update_Expense_Reimbursement_Form_URL</name>
+        <label>Update Expense Reimbursement Form URL</label>
+        <locationX>7178</locationX>
+        <locationY>3347</locationY>
+        <inputAssignments>
+            <field>Expense_Reimbursement_Form_URL__c</field>
+            <value>
+                <stringValue>https://openexchangeinc.formstack.com/forms/expense_reimbursement_form_jp_morgan_amer_emea_oeconnect_custom_price_book</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Copy_13_of_Update_Expense_Reimbursement_Form_URL</name>
+        <label>Update Expense Reimbursement Form URL</label>
+        <locationX>7442</locationX>
+        <locationY>3455</locationY>
+        <inputAssignments>
+            <field>Expense_Reimbursement_Form_URL__c</field>
+            <value>
+                <stringValue>https://openexchangeinc.formstack.com/forms/rbc_oeconnect_custom_price_book</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Copy_1_of_Copy_10_of_Update_Expense_Reimbursement_Form_URL</name>
+        <label>Update Expense Reimbursement Form URL</label>
+        <locationX>6386</locationX>
+        <locationY>3023</locationY>
+        <inputAssignments>
+            <field>Expense_Reimbursement_Form_URL__c</field>
+            <value>
+                <stringValue>https://openexchangeinc.formstack.com/forms/gcs_marketing_kol_rd_event_package</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Copy_1_of_Update_Expense_Reimbursement_Form_URL</name>
+        <label>Update Expense Reimbursement Form URL</label>
+        <locationX>1634</locationX>
+        <locationY>1079</locationY>
+        <inputAssignments>
+            <field>Expense_Reimbursement_Form_URL__c</field>
+            <value>
+                <stringValue>https://openexchangeinc.formstack.com/forms/lseg_corporate_services</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Copy_2_of_Update_Expense_Reimbursement_Form_URL</name>
+        <label>Update Expense Reimbursement Form URL</label>
+        <locationX>2426</locationX>
+        <locationY>1403</locationY>
+        <inputAssignments>
+            <field>Expense_Reimbursement_Form_URL__c</field>
+            <value>
+                <stringValue>https://openexchangeinc.formstack.com/forms/expense_reimbursement_form_oe_connect</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Copy_3_of_Update_Expense_Reimbursement_Form_URL</name>
+        <label>Update Expense Reimbursement Form URL</label>
+        <locationX>2954</locationX>
+        <locationY>1619</locationY>
+        <inputAssignments>
+            <field>Expense_Reimbursement_Form_URL__c</field>
+            <value>
+                <stringValue>https://openexchangeinc.formstack.com/forms/expense_reimbursement_form_ubs_conference</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Copy_4_of_Update_Expense_Reimbursement_Form_URL</name>
+        <label>Update Expense Reimbursement Form URL</label>
+        <locationX>4538</locationX>
+        <locationY>2267</locationY>
+        <inputAssignments>
+            <field>Expense_Reimbursement_Form_URL__c</field>
+            <value>
+                <stringValue>https://openexchangeinc.formstack.com/forms/expense_reimbursement_form_citi_conference2023</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Copy_5_of_Update_Expense_Reimbursement_Form_URL</name>
+        <label>Update Expense Reimbursement Form URL</label>
+        <locationX>4010</locationX>
+        <locationY>2051</locationY>
+        <inputAssignments>
+            <field>Expense_Reimbursement_Form_URL__c</field>
+            <value>
+                <stringValue>https://openexchangeinc.formstack.com/forms/expense_reimbursement_form_wells_fargo_conference</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Copy_6_of_Update_Expense_Reimbursement_Form_URL</name>
+        <label>Update Expense Reimbursement Form URL</label>
+        <locationX>4802</locationX>
+        <locationY>2375</locationY>
+        <inputAssignments>
+            <field>Expense_Reimbursement_Form_URL__c</field>
+            <value>
+                <stringValue>https://openexchangeinc.formstack.com/forms/gcs_investor_day_standard_package</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Copy_7_of_Update_Expense_Reimbursement_Form_URL</name>
+        <label>Update Expense Reimbursement Form URL</label>
+        <locationX>5066</locationX>
+        <locationY>2483</locationY>
+        <inputAssignments>
+            <field>Expense_Reimbursement_Form_URL__c</field>
+            <value>
+                <stringValue>https://openexchangeinc.formstack.com/forms/gcs_investor_day_premium_package</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Copy_8_of_Update_Expense_Reimbursement_Form_URL</name>
+        <label>Update Expense Reimbursement Form URL</label>
+        <locationX>5330</locationX>
+        <locationY>2591</locationY>
+        <inputAssignments>
+            <field>Expense_Reimbursement_Form_URL__c</field>
+            <value>
+                <stringValue>https://openexchangeinc.formstack.com/forms/expense_reimbursement_form_barclays_oeconnect_custom_price_book</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Copy_9_of_Update_Expense_Reimbursement_Form_URL</name>
+        <label>Update Expense Reimbursement Form URL</label>
+        <locationX>5594</locationX>
+        <locationY>2699</locationY>
+        <inputAssignments>
+            <field>Expense_Reimbursement_Form_URL__c</field>
+            <value>
+                <stringValue>https://openexchangeinc.formstack.com/forms/gcs_earnings_plus_package_four_pack</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>copyUpdate_Expense_Reimbursement_Form_URL</name>
+        <label>Update Expense Reimbursement Form URL</label>
+        <locationX>6650</locationX>
+        <locationY>3131</locationY>
+        <inputAssignments>
+            <field>Expense_Reimbursement_Form_URL__c</field>
+            <value>
+                <stringValue>https://openexchangeinc.formstack.com/forms/buy_side_standard_price_book</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Expense_Reimbursement_Form_URL</name>
+        <label>Update Expense Reimbursement Form URL</label>
+        <locationX>50</locationX>
+        <locationY>431</locationY>
+        <inputAssignments>
+            <field>Expense_Reimbursement_Form_URL__c</field>
+            <value>
+                <stringValue>https://openexchangeinc.formstack.com/forms/expense_reimbursement_form_citi_conference</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Expense_Reimbursement_Form_URL1</name>
+        <label>Update Expense Reimbursement Form URL</label>
+        <locationX>314</locationX>
+        <locationY>539</locationY>
+        <inputAssignments>
+            <field>Expense_Reimbursement_Form_URL__c</field>
+            <value>
+                <stringValue>https://openexchangeinc.formstack.com/forms/expense_reimbursement_form_corporate_services</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Expense_Reimbursement_Form_URL10</name>
+        <label>Update Expense Reimbursement Form URL</label>
+        <locationX>2690</locationX>
+        <locationY>1511</locationY>
+        <inputAssignments>
+            <field>Expense_Reimbursement_Form_URL__c</field>
+            <value>
+                <stringValue>https://openexchangeinc.formstack.com/forms/rbc_oeconference_custom</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Expense_Reimbursement_Form_URL11</name>
+        <label>Update Expense Reimbursement Form URL</label>
+        <locationX>3218</locationX>
+        <locationY>1727</locationY>
+        <inputAssignments>
+            <field>Expense_Reimbursement_Form_URL__c</field>
+            <value>
+                <stringValue>https://openexchangeinc.formstack.com/forms/expense_reimbursement_form_ubs_oe_connect</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Expense_Reimbursement_Form_URL12</name>
+        <label>Update Expense Reimbursement Form URL</label>
+        <locationX>3482</locationX>
+        <locationY>1835</locationY>
+        <inputAssignments>
+            <field>Expense_Reimbursement_Form_URL__c</field>
+            <value>
+                <stringValue>https://openexchangeinc.formstack.com/forms/expense_reimbursement_form_veracast_bank_of_america_oeconference_custom_price_book</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Expense_Reimbursement_Form_URL13</name>
+        <label>Update Expense Reimbursement Form URL</label>
+        <locationX>3746</locationX>
+        <locationY>1943</locationY>
+        <inputAssignments>
+            <field>Expense_Reimbursement_Form_URL__c</field>
+            <value>
+                <stringValue>https://openexchangeinc.formstack.com/forms/expense_reimbursement_form_veracast_oeconference_standard_price_book</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Expense_Reimbursement_Form_URL2</name>
+        <label>Update Expense Reimbursement Form URL</label>
+        <locationX>578</locationX>
+        <locationY>647</locationY>
+        <inputAssignments>
+            <field>Expense_Reimbursement_Form_URL__c</field>
+            <value>
+                <stringValue>https://openexchangeinc.formstack.com/forms/expense_reimbursement_credit_suisse_oe_connect</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Expense_Reimbursement_Form_URL3</name>
+        <label>Update Expense Reimbursement Form URL</label>
+        <locationX>842</locationX>
+        <locationY>755</locationY>
+        <inputAssignments>
+            <field>Expense_Reimbursement_Form_URL__c</field>
+            <value>
+                <stringValue>https://openexchangeinc.formstack.com/forms/gcs_earnings_enhanced_package_four_pack</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Expense_Reimbursement_Form_URL4</name>
+        <label>Update Expense Reimbursement Form URL</label>
+        <locationX>1106</locationX>
+        <locationY>863</locationY>
+        <inputAssignments>
+            <field>Expense_Reimbursement_Form_URL__c</field>
+            <value>
+                <stringValue>https://openexchangeinc.formstack.com/forms/gcs_investor_day_plus_package_form</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Expense_Reimbursement_Form_URL6</name>
+        <label>Update Expense Reimbursement Form URL</label>
+        <locationX>1370</locationX>
+        <locationY>971</locationY>
+        <inputAssignments>
+            <field>Expense_Reimbursement_Form_URL__c</field>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Expense_Reimbursement_Form_URL7</name>
+        <label>Update Expense Reimbursement Form URL</label>
+        <locationX>1898</locationX>
+        <locationY>1187</locationY>
+        <inputAssignments>
+            <field>Expense_Reimbursement_Form_URL__c</field>
+            <value>
+                <stringValue>https://openexchangeinc.formstack.com/forms/lseg_standard_oeconnect_price_book</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Expense_Reimbursement_Form_URL8</name>
+        <label>Update Expense Reimbursement Form URL</label>
+        <locationX>2162</locationX>
+        <locationY>1295</locationY>
+        <inputAssignments>
+            <field>Expense_Reimbursement_Form_URL__c</field>
+            <value>
+                <stringValue>https://openexchangeinc.formstack.com/forms/expense_reimbursement_form_oe_conference</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Expense_Reimbursement_Form_URL_copy6</name>
+        <label>Update Expense Reimbursement Form URL</label>
+        <locationX>4274</locationX>
+        <locationY>2159</locationY>
+        <inputAssignments>
+            <field>Expense_Reimbursement_Form_URL__c</field>
+            <value>
+                <stringValue>https://openexchangeinc.formstack.com/forms/expense_reimbursement_form_citi_connect2023</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Expense_Reimbursement_Form_URLcopy</name>
+        <label>Update Expense Reimbursement Form URL</label>
+        <locationX>5858</locationX>
+        <locationY>2807</locationY>
+        <inputAssignments>
+            <field>Expense_Reimbursement_Form_URL__c</field>
+            <value>
+                <stringValue>https://openexchangeinc.formstack.com/forms/morgan_stanley_oeconference_custom</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <startElementReference>If_Pricebook_is_Citi_OEConference_Custom_Price_Book</startElementReference>
+    <status>Active</status>
+</Flow>

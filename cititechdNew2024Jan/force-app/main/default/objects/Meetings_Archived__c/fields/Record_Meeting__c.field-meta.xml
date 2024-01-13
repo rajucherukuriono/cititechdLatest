@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Record_Meeting__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>this checkbox indicates that the meeting is to be recorded</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Check if recording is approved/requested for this meting. Add notes below to specify how it its to be record, what views, etc.</inlineHelpText>
+    <label>Record Meeting?</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

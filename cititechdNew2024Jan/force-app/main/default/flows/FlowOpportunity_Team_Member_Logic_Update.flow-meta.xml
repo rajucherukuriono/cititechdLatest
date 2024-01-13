@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <interviewLabel>Opportunity Team Member Logic Update {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Opportunity Team Member Logic Update</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Update_Opportunity_Team_Tagged_Checkbox</name>
+        <label>Update Opportunity Team Tagged Checkbox</label>
+        <locationX>176</locationX>
+        <locationY>335</locationY>
+        <filters>
+            <field>Opportunity_Team_Members_Tagged__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Opportunity_Team_Members_Tagged__c</field>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record.Opportunity</inputReference>
+    </recordUpdates>
+    <startElementReference>Update_Opportunity_Team_Tagged_Checkbox</startElementReference>
+    <status>Active</status>
+</Flow>

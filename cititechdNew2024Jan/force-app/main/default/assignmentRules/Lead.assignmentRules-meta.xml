@@ -1,0 +1,995 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssignmentRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignmentRule>
+        <fullName>BDR %2B HubSpot Assignment Rules - Global</fullName>
+        <active>false</active>
+        <ruleEntry>
+            <assignedTo>rob.garrigan@openexc.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>equals</operation>
+                <value>IHS Account</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>rob.garrigan@openexc.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <booleanFilter>1 OR 2 OR 3 OR 4 OR 5 OR 6</booleanFilter>
+            <criteriaItems>
+                <field>Lead.Company</field>
+                <operation>contains</operation>
+                <value>Abernathy MacGregor,AdvisIRy Partners,Alpha IR,APCO Worldwide,Argot Partners,Asbury Investor Relations,Bank of New York Mellon ADR,Bowen Craggs,Broadridge,Brunswick Advisory Limited,Brunswick Group,Bryan Mills Iradesso,Burns McClellan</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Company</field>
+                <operation>contains</operation>
+                <value>Burson Cohn &amp; Wolfe,Burson Marsteller,CHF Investor Relations,Christensen,Citi ADR Group,Citigate Dewe Rogerson,Clermont Partners,Convene,Corbin Advisors,Dix &amp; Eaton,Edelman,Elevate-IR,Equisolve,Financial Profiles,Finn Partners,Finsbury</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Company</field>
+                <operation>contains</operation>
+                <value>Fleishman-Hillard,FNK Investor Relations,FTI Consulting,Gateway IR,Gilmartin Group,Gladstone Place Partners,Global Consulting Group,Golin Harris,Grayling,Harbor Access LLC,Hill+Knowlton Strategies,i-advize Corporate Communications,ICR</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Company</field>
+                <operation>contains</operation>
+                <value>IHS Markit,IPR Ogilvy Ltd,Joele Frank,Wilkinson Brimmer Katcher,KCSA Strategic Communications,Kei Advisors LLC,Kekst CNC,KPMG-Makinson Cowell,Lambert Edwards &amp; Associates,LHA,Loderock Advisors,Lumi,Maison Brison Inc,MessageBank</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Company</field>
+                <operation>contains</operation>
+                <value>Morrow Sodali LLC,MWW Group,NASDAQ,NATIONAL Capital Markets,New York Stock Exchange,NextLevel,Ogilvy Public Relations Worldwide,Pondel Wilkinson,Porter LeVay &amp; Rose,Prosek Partners,Renmark Financial,Rivel,Rubenstein Investor Relations</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Company</field>
+                <operation>contains</operation>
+                <value>Sard Verbinnen &amp; Co,Sharon Merrill Associates,Sloane &amp; Co.,Solebury Trout,Stern Investor Relations,Teneo,The Blueshirt Group,The Piacente Group,Three Part Advisers,TraDigital,Weber Shandwick</value>
+            </criteriaItems>
+            <template>All_Email_Templates/LeadsNewassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>OETV_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>1 OR 2 OR 3</booleanFilter>
+            <criteriaItems>
+                <field>Lead.Website_Forms__c</field>
+                <operation>equals</operation>
+                <value>OETV Inquiry Form</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Website_Forms__c</field>
+                <operation>equals</operation>
+                <value>OETV for Event Providers </value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Website_Forms__c</field>
+                <operation>equals</operation>
+                <value>OETV Inquiry</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>BDR_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.Website_Forms__c</field>
+                <operation>equals</operation>
+                <value>Niri Conference 2022</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.CreatedDate</field>
+                <operation>greaterOrEqual</operation>
+                <value>5/15/2022 9:30 AM</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>jini.kim@openexc.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <booleanFilter>1 OR 2 OR 3</booleanFilter>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Afghanistan,American Samoa,Antarctica,Australia,Azerbaijan,Bahrain,Bangladesh,Bhutan,Brunei,Darussalam,Cambodia,China,Christmas Island,Cocos Islands,Cook Islands,Fiji,French Southern Territories,Heard and McDonald Islands,India,Indonesia,Japan,Macau</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Malaysia,Maldives,Marshall Islands,Micronesia,Myanmar,Nauru,Nepal,New Caledonia,New Zealand,Niue,Norfolk Island,North Korea,Northern Mariana Islands,Pakistan,Palau,Papua,New Guinea,Philippines,Samoa,Saudi Arabia,Singapore,Solomon Islands,South Korea</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>SrI Lanka,Taiwan,Thailand,Timor-Leste,Tokelau,Tonga,Tuvalu,Vanuatu,Vietnam,Wallis and Futuna</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>BDR_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>(1 OR 2 OR 3 OR 4 OR 5 OR 6) AND 7 AND 8</booleanFilter>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Albania,Algeria,Andorra,Angola,Armenia,Austria,Belarus,Belgium,Benin,Bonaire Sint Eustatius and,Saba,Bosnia and Herzegovina,Botswana,Bouvet Island,British Indian Ocean Territory,Bulgaria,Burkina Faso,Burundi,Cameroon,Cape Verde,Central African Republic</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Chad,Comoros,Congo,Democratic Republic of the Congo,Republic of the Croatia,Cyprus,Czech Republic,Côte d&apos;Ivoire,Denmark,Djibouti,Egypt,Equatorial,Guinea,Eritrea,Estonia,Eswatini (Swaziland),Ethiopia,Faroe Islands,Finland,France,French Polynesia,Gabon</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Gambia,Georgia,Germany,Ghana,Gibraltar,Greece,Guam,Guernsey,Guinea,Guinea-Bissau,Holy See,Hungary,Iceland,Iran,Iraq,Isle of Man,Israel,Italy,Jersey,Jordan,Kenya,Kuwait,Lao,People&apos;s Democratic Republic,Latvia,Lebanon,Lesotho,Liberia,Libya</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Liechtenstein,Lithuania,Luxembourg,Macedonia,Madagascar,Malawi,Mali,Malta,Mauritania,Mauritius,Mayotte,Moldova,Monaco,Mongolia,Montenegro,Morocco,Mozambique,Namibia,Netherlands,Niger,Nigeria,Norway,Oman,Palestine,Pitcairn,Poland,Portugal,Qatar,Romania</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Russia,Rwanda,Réunion,Saint Helena,San,Marino,Sao,Tome,and,Principe,Senegal,Serbia,Seychelles,Sierra,Leone,Slovakia,Slovenia,Somalia,South Africa,South Georgia,South Sudan,Spain,Sudan,Suriname,Svalbard,and,Jan,Mayen,Islands,Sweden,Switzerland,Syria</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Tanzania,Togo,Tunisia,Turkey,Uganda,Ukraine,United Arab Emirates,Vatican City,Western Sahara,Yemen,Zambia,Zimbabwe,United Kingdom,Ireland</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Company</field>
+                <operation>startsWith</operation>
+                <value>a,b,c,d,e,f,g,1,2,3,4,5,6,7,8,9,0</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.CreatedDate</field>
+                <operation>greaterThan</operation>
+                <value>5/16/2022 9:30 AM</value>
+            </criteriaItems>
+            <template>All_Email_Templates/LeadsNewassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>BDR_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>(1 OR 2 OR 3 OR 4 OR 5 OR 6) AND 7 AND 8</booleanFilter>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Albania,Algeria,Andorra,Angola,Armenia,Austria,Belarus,Belgium,Benin,Bonaire Sint Eustatius and,Saba,Bosnia and Herzegovina,Botswana,Bouvet Island,British Indian Ocean Territory,Bulgaria,Burkina Faso,Burundi,Cameroon,Cape Verde,Central African Republic</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Chad,Comoros,Congo,Democratic Republic of the Congo,Republic of the Croatia,Cyprus,Czech Republic,Côte d&apos;Ivoire,Denmark,Djibouti,Egypt,Equatorial,Guinea,Eritrea,Estonia,Eswatini (Swaziland),Ethiopia,Faroe Islands,Finland,France,French Polynesia,Gabon</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Gambia,Georgia,Germany,Ghana,Gibraltar,Greece,Guam,Guernsey,Guinea,Guinea-Bissau,Holy See,Hungary,Iceland,Iran,Iraq,Isle of Man,Israel,Italy,Jersey,Jordan,Kenya,Kuwait,Lao,People&apos;s Democratic Republic,Latvia,Lebanon,Lesotho,Liberia,Libya</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Liechtenstein,Lithuania,Luxembourg,Macedonia,Madagascar,Malawi,Mali,Malta,Mauritania,Mauritius,Mayotte,Moldova,Monaco,Mongolia,Montenegro,Morocco,Mozambique,Namibia,Netherlands,Niger,Nigeria,Norway,Oman,Palestine,Pitcairn,Poland,Portugal,Qatar,Romania</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Russia,Rwanda,Réunion,Saint Helena,San,Marino,Sao,Tome,and,Principe,Senegal,Serbia,Seychelles,Sierra,Leone,Slovakia,Slovenia,Somalia,South Africa,South Georgia,South Sudan,Spain,Sudan,Suriname,Svalbard,and,Jan,Mayen,Islands,Sweden,Switzerland,Syria</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Tanzania,Togo,Tunisia,Turkey,Uganda,Ukraine,United Arab Emirates,Vatican City,Western Sahara,Yemen,Zambia,Zimbabwe,United Kingdom,Ireland</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Company</field>
+                <operation>startsWith</operation>
+                <value>h,I,i,j,k,l,m,n,o,p</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.CreatedDate</field>
+                <operation>greaterThan</operation>
+                <value>5/16/2022 9:30 AM</value>
+            </criteriaItems>
+            <template>All_Email_Templates/LeadsNewassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>BDR_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>(1 OR 2 OR 3 OR 4 OR 5 OR 6) AND 7 AND 8</booleanFilter>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Albania,Algeria,Andorra,Angola,Armenia,Austria,Belarus,Belgium,Benin,Bonaire Sint Eustatius and,Saba,Bosnia and Herzegovina,Botswana,Bouvet Island,British Indian Ocean Territory,Bulgaria,Burkina Faso,Burundi,Cameroon,Cape Verde,Central African Republic</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Chad,Comoros,Congo,Democratic Republic of the Congo,Republic of the Croatia,Cyprus,Czech Republic,Côte d&apos;Ivoire,Denmark,Djibouti,Egypt,Equatorial,Guinea,Eritrea,Estonia,Eswatini (Swaziland),Ethiopia,Faroe Islands,Finland,France,French Polynesia,Gabon</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Gambia,Georgia,Germany,Ghana,Gibraltar,Greece,Guam,Guernsey,Guinea,Guinea-Bissau,Holy See,Hungary,Iceland,Iran,Iraq,Isle of Man,Israel,Italy,Jersey,Jordan,Kenya,Kuwait,Lao,People&apos;s Democratic Republic,Latvia,Lebanon,Lesotho,Liberia,Libya</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Liechtenstein,Lithuania,Luxembourg,Macedonia,Madagascar,Malawi,Mali,Malta,Mauritania,Mauritius,Mayotte,Moldova,Monaco,Mongolia,Montenegro,Morocco,Mozambique,Namibia,Netherlands,Niger,Nigeria,Norway,Oman,Palestine,Pitcairn,Poland,Portugal,Qatar,Romania</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Russia,Rwanda,Réunion,Saint Helena,San,Marino,Sao,Tome,and,Principe,Senegal,Serbia,Seychelles,Sierra,Leone,Slovakia,Slovenia,Somalia,South Africa,South Georgia,South Sudan,Spain,Sudan,Suriname,Svalbard,and,Jan,Mayen,Islands,Sweden,Switzerland,Syria</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Tanzania,Togo,Tunisia,Turkey,Uganda,Ukraine,United Arab Emirates,Vatican City,Western Sahara,Yemen,Zambia,Zimbabwe,United Kingdom,Ireland</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Company</field>
+                <operation>startsWith</operation>
+                <value>q,r,s,t,u,v,w,x,y,z</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.CreatedDate</field>
+                <operation>greaterThan</operation>
+                <value>5/16/2022 9:30 AM</value>
+            </criteriaItems>
+            <template>All_Email_Templates/LeadsNewassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>BDR_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>United States</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.State</field>
+                <operation>equals</operation>
+                <value>New York</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Company</field>
+                <operation>startsWith</operation>
+                <value>a,b,c,d,e,f,g,h,i,j,k,1,2,3,4,5,6,7,8,9,0</value>
+            </criteriaItems>
+            <template>All_Email_Templates/LeadsNewassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>BDR_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>United States</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.State</field>
+                <operation>equals</operation>
+                <value>New York</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Company</field>
+                <operation>startsWith</operation>
+                <value>l,L,m,n,o,p</value>
+            </criteriaItems>
+            <template>All_Email_Templates/LeadsNewassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>sean.adhamy@openexc.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>United States</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.State</field>
+                <operation>equals</operation>
+                <value>New York</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Company</field>
+                <operation>startsWith</operation>
+                <value>q,r,s,t,u,v,w,x,y,z</value>
+            </criteriaItems>
+            <template>All_Email_Templates/LeadsNewassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>kevin.stemple@openexc.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>United States</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.State</field>
+                <operation>equals</operation>
+                <value>California</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Company</field>
+                <operation>startsWith</operation>
+                <value>a,b,c,d,e,f,g,h,i,j,k,1,2,3,4,5,6,7,8,9,0</value>
+            </criteriaItems>
+            <template>All_Email_Templates/LeadsNewassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Unsorted_Leads</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>United States</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.State</field>
+                <operation>equals</operation>
+                <value>California</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Company</field>
+                <operation>startsWith</operation>
+                <value>l,L,m,n,o,p,q,r,s,t,u,v,w,x,y,z</value>
+            </criteriaItems>
+            <template>All_Email_Templates/LeadsNewassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>kevin.stemple@openexc.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>United States</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.State</field>
+                <operation>equals</operation>
+                <value>Arizona,Colorado,Hawaii</value>
+            </criteriaItems>
+            <template>All_Email_Templates/LeadsNewassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Unsorted_Leads</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>United States</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.State</field>
+                <operation>equals</operation>
+                <value>Alaska,Idaho,Montana,Nevada,New Mexico,Oregon,Virginia,Washington</value>
+            </criteriaItems>
+            <template>All_Email_Templates/LeadsNewassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>BDR_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>United States</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.State</field>
+                <operation>equals</operation>
+                <value>Illinois,Indiana,Kansas,Maine,Massachusetts,Missouri,Nebraska,New Hampshire,North Dakota,Oklahoma,South Dakota,Utah,Vermont,West Virginia,Ohio</value>
+            </criteriaItems>
+            <template>All_Email_Templates/LeadsNewassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>BDR_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>United States</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.State</field>
+                <operation>equals</operation>
+                <value>Alabama,Arkansas,District of Columbia,Kentucky,Maryland,Mississippi,South Carolina,North Carolina</value>
+            </criteriaItems>
+            <template>All_Email_Templates/LeadsNewassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>BDR_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>United States</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.State</field>
+                <operation>equals</operation>
+                <value>Connecticut,Delaware,Iowa,Michigan,Minnesota,Pennsylvania,Rhode Island</value>
+            </criteriaItems>
+            <template>All_Email_Templates/LeadsNewassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>sean.adhamy@openexc.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>United States</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.State</field>
+                <operation>equals</operation>
+                <value>Florida,Georgia,Louisiana,New Jersey,Tennessee,Texas,Wisconsin</value>
+            </criteriaItems>
+            <template>All_Email_Templates/LeadsNewassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Unsorted_Leads</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>equals</operation>
+                <value>Website</value>
+            </criteriaItems>
+        </ruleEntry>
+    </assignmentRule>
+    <assignmentRule>
+        <fullName>BDR %2B HubSpot Assignment Rules June 2023</fullName>
+        <active>true</active>
+        <ruleEntry>
+            <assignedTo>rob.garrigan@openexc.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>equals</operation>
+                <value>IHS Account</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>rob.garrigan@openexc.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <booleanFilter>1 OR 2 OR 3 OR 4 OR 5 OR 6</booleanFilter>
+            <criteriaItems>
+                <field>Lead.Company</field>
+                <operation>contains</operation>
+                <value>Abernathy MacGregor,AdvisIRy Partners,Alpha IR,APCO Worldwide,Argot Partners,Asbury Investor Relations,Bank of New York Mellon ADR,Bowen Craggs,Broadridge,Brunswick Advisory Limited,Brunswick Group,Bryan Mills Iradesso,Burns McClellan</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Company</field>
+                <operation>contains</operation>
+                <value>Burson Cohn &amp; Wolfe,Burson Marsteller,CHF Investor Relations,Christensen,Citi ADR Group,Citigate Dewe Rogerson,Clermont Partners,Convene,Corbin Advisors,Dix &amp; Eaton,Edelman,Elevate-IR,Equisolve,Financial Profiles,Finn Partners,Finsbury</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Company</field>
+                <operation>contains</operation>
+                <value>Fleishman-Hillard,FNK Investor Relations,FTI Consulting,Gateway IR,Gilmartin Group,Gladstone Place Partners,Global Consulting Group,Golin Harris,Grayling,Harbor Access LLC,Hill+Knowlton Strategies,i-advize Corporate Communications,ICR</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Company</field>
+                <operation>contains</operation>
+                <value>IHS Markit,IPR Ogilvy Ltd,Joele Frank,Wilkinson Brimmer Katcher,KCSA Strategic Communications,Kei Advisors LLC,Kekst CNC,KPMG-Makinson Cowell,Lambert Edwards &amp; Associates,LHA,Loderock Advisors,Lumi,Maison Brison Inc,MessageBank</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Company</field>
+                <operation>contains</operation>
+                <value>Morrow Sodali LLC,MWW Group,NASDAQ,NATIONAL Capital Markets,New York Stock Exchange,NextLevel,Ogilvy Public Relations Worldwide,Pondel Wilkinson,Porter LeVay &amp; Rose,Prosek Partners,Renmark Financial,Rivel,Rubenstein Investor Relations</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Company</field>
+                <operation>contains</operation>
+                <value>Sard Verbinnen &amp; Co,Sharon Merrill Associates,Sloane &amp; Co.,Solebury Trout,Stern Investor Relations,Teneo,The Blueshirt Group,The Piacente Group,Three Part Advisers,TraDigital,Weber Shandwick</value>
+            </criteriaItems>
+            <template>All_Email_Templates/LeadsNewassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>OETV_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>1 OR 2 OR 3</booleanFilter>
+            <criteriaItems>
+                <field>Lead.Website_Forms__c</field>
+                <operation>equals</operation>
+                <value>OETV Inquiry Form</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Website_Forms__c</field>
+                <operation>equals</operation>
+                <value>OETV for Event Providers </value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Website_Forms__c</field>
+                <operation>equals</operation>
+                <value>OETV Inquiry</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>jini.kim@openexc.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <booleanFilter>1 OR 2 OR 3</booleanFilter>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Afghanistan,American Samoa,Antarctica,Australia,Azerbaijan,Bahrain,Bangladesh,Bhutan,Brunei,Darussalam,Cambodia,China,Christmas Island,Cocos Islands,Cook Islands,Fiji,French Southern Territories,Heard and McDonald Islands,India,Indonesia,Japan,Macau</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Malaysia,Maldives,Marshall Islands,Micronesia,Myanmar,Nauru,Nepal,New Caledonia,New Zealand,Niue,Norfolk Island,North Korea,Northern Mariana Islands,Pakistan,Palau,Papua,New Guinea,Philippines,Samoa,Singapore,Solomon Islands,South Korea</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>SrI Lanka,Taiwan,Thailand,Timor-Leste,Tokelau,Tonga,Tuvalu,Vanuatu,Vietnam,Wallis and Futuna</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>jamie.downing@openexc.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <booleanFilter>(1 OR 2 OR 3 OR 4 OR 5 OR 6) AND 7</booleanFilter>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Albania,Algeria,Andorra,Angola,Armenia,Austria,Belarus,Belgium,Benin,Bonaire Sint Eustatius and,Saba,Bosnia and Herzegovina,Botswana,Bouvet Island,British Indian Ocean Territory,Bulgaria,Burkina Faso,Burundi,Cameroon,Cape Verde,Central African Republic</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Chad,Comoros,Congo,Democratic Republic of the Congo,Republic of the Croatia,Cyprus,Czech Republic,Côte d&apos;Ivoire,Denmark,Djibouti,Egypt,Equatorial,Guinea,Eritrea,Estonia,Eswatini (Swaziland),Ethiopia,Faroe Islands,Finland,France,French Polynesia,Gabon</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Gambia,Georgia,Germany,Ghana,Gibraltar,Greece,Guam,Guernsey,Guinea,Guinea-Bissau,Holy See,Hungary,Iceland,Iran,Iraq,Isle of Man,Israel,Italy,Jersey,Jordan,Kenya,Kuwait,Lao,People&apos;s Democratic Republic,Latvia,Lebanon,Lesotho,Liberia,Libya</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Liechtenstein,Lithuania,Luxembourg,Macedonia,Madagascar,Malawi,Mali,Malta,Mauritania,Mauritius,Mayotte,Moldova,Monaco,Mongolia,Montenegro,Morocco,Mozambique,Namibia,Netherlands,Niger,Nigeria,Norway,Oman,Palestine,Pitcairn,Poland,Portugal,Qatar,Romania</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Russia,Rwanda,Réunion,Saint Helena,San,Marino,Sao,Tome,and,Principe,Senegal,Serbia,Seychelles,Sierra,Leone,Slovakia,Slovenia,Somalia,South Africa,South Georgia,South Sudan,Spain,Sudan,Suriname,Svalbard,and,Jan,Mayen,Islands,Sweden,Switzerland,Syria</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Tanzania,Togo,Tunisia,Turkey,Uganda,Ukraine,United Arab Emirates,Vatican City,Western Sahara,Yemen,Zambia,Zimbabwe,United Kingdom,Ireland,Saudi Arabia</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Company</field>
+                <operation>startsWith</operation>
+                <value>a,b,c,d,1,2,3,4,5,6,7,8,9,0</value>
+            </criteriaItems>
+            <template>All_Email_Templates/LeadsNewassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>jamie.downing@openexc.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <booleanFilter>(1 OR 2 OR 3 OR 4 OR 5 OR 6) AND 7</booleanFilter>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Albania,Algeria,Andorra,Angola,Armenia,Austria,Belarus,Belgium,Benin,Bonaire Sint Eustatius and,Saba,Bosnia and Herzegovina,Botswana,Bouvet Island,British Indian Ocean Territory,Bulgaria,Burkina Faso,Burundi,Cameroon,Cape Verde,Central African Republic</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Chad,Comoros,Congo,Democratic Republic of the Congo,Republic of the Croatia,Cyprus,Czech Republic,Côte d&apos;Ivoire,Denmark,Djibouti,Egypt,Equatorial,Guinea,Eritrea,Estonia,Eswatini (Swaziland),Ethiopia,Faroe Islands,Finland,France,French Polynesia,Gabon</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Gambia,Georgia,Germany,Ghana,Gibraltar,Greece,Guam,Guernsey,Guinea,Guinea-Bissau,Holy See,Hungary,Iceland,Iran,Iraq,Isle of Man,Israel,Italy,Jersey,Jordan,Kenya,Kuwait,Lao,People&apos;s Democratic Republic,Latvia,Lebanon,Lesotho,Liberia,Libya</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Liechtenstein,Lithuania,Luxembourg,Macedonia,Madagascar,Malawi,Mali,Malta,Mauritania,Mauritius,Mayotte,Moldova,Monaco,Mongolia,Montenegro,Morocco,Mozambique,Namibia,Netherlands,Niger,Nigeria,Norway,Oman,Palestine,Pitcairn,Poland,Portugal,Qatar,Romania</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Russia,Rwanda,Réunion,Saint Helena,San,Marino,Sao,Tome,and,Principe,Senegal,Serbia,Seychelles,Sierra,Leone,Slovakia,Slovenia,Somalia,South Africa,South Georgia,South Sudan,Spain,Sudan,Suriname,Svalbard,and,Jan,Mayen,Islands,Sweden,Switzerland,Syria</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Tanzania,Togo,Tunisia,Turkey,Uganda,Ukraine,United Arab Emirates,Vatican City,Western Sahara,Yemen,Zambia,Zimbabwe,United Kingdom,Ireland,Saudi Arabia</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Company</field>
+                <operation>startsWith</operation>
+                <value>e,f,g,h,i,j,k</value>
+            </criteriaItems>
+            <template>All_Email_Templates/LeadsNewassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>jamie.downing@openexc.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <booleanFilter>(1 OR 2 OR 3 OR 4 OR 5 OR 6) AND 7</booleanFilter>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Albania,Algeria,Andorra,Angola,Armenia,Austria,Belarus,Belgium,Benin,Bonaire Sint Eustatius and,Saba,Bosnia and Herzegovina,Botswana,Bouvet Island,British Indian Ocean Territory,Bulgaria,Burkina Faso,Burundi,Cameroon,Cape Verde,Central African Republic</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Chad,Comoros,Congo,Democratic Republic of the Congo,Republic of the Croatia,Cyprus,Czech Republic,Côte d&apos;Ivoire,Denmark,Djibouti,Egypt,Equatorial,Guinea,Eritrea,Estonia,Eswatini (Swaziland),Ethiopia,Faroe Islands,Finland,France,French Polynesia,Gabon</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Gambia,Georgia,Germany,Ghana,Gibraltar,Greece,Guam,Guernsey,Guinea,Guinea-Bissau,Holy See,Hungary,Iceland,Iran,Iraq,Isle of Man,Israel,Italy,Jersey,Jordan,Kenya,Kuwait,Lao,People&apos;s Democratic Republic,Latvia,Lebanon,Lesotho,Liberia,Libya</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Liechtenstein,Lithuania,Luxembourg,Macedonia,Madagascar,Malawi,Mali,Malta,Mauritania,Mauritius,Mayotte,Moldova,Monaco,Mongolia,Montenegro,Morocco,Mozambique,Namibia,Netherlands,Niger,Nigeria,Norway,Oman,Palestine,Pitcairn,Poland,Portugal,Qatar,Romania</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Russia,Rwanda,Réunion,Saint Helena,San,Marino,Sao,Tome,and,Principe,Senegal,Serbia,Seychelles,Sierra,Leone,Slovakia,Slovenia,Somalia,South Africa,South Georgia,South Sudan,Spain,Sudan,Suriname,Svalbard,and,Jan,Mayen,Islands,Sweden,Switzerland,Syria</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Tanzania,Togo,Tunisia,Turkey,Uganda,Ukraine,United Arab Emirates,Vatican City,Western Sahara,Yemen,Zambia,Zimbabwe,United Kingdom,Ireland,Saudi Arabia</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Company</field>
+                <operation>startsWith</operation>
+                <value>L,l,m,n,o,p,q,r</value>
+            </criteriaItems>
+            <template>All_Email_Templates/LeadsNewassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>jamie.downing@openexc.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <booleanFilter>(1 OR 2 OR 3 OR 4 OR 5 OR 6) AND 7</booleanFilter>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Albania,Algeria,Andorra,Angola,Armenia,Austria,Belarus,Belgium,Benin,Bonaire Sint Eustatius and,Saba,Bosnia and Herzegovina,Botswana,Bouvet Island,British Indian Ocean Territory,Bulgaria,Burkina Faso,Burundi,Cameroon,Cape Verde,Central African Republic</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Chad,Comoros,Congo,Democratic Republic of the Congo,Republic of the Croatia,Cyprus,Czech Republic,Côte d&apos;Ivoire,Denmark,Djibouti,Egypt,Equatorial,Guinea,Eritrea,Estonia,Eswatini (Swaziland),Ethiopia,Faroe Islands,Finland,France,French Polynesia,Gabon</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Gambia,Georgia,Germany,Ghana,Gibraltar,Greece,Guam,Guernsey,Guinea,Guinea-Bissau,Holy See,Hungary,Iceland,Iran,Iraq,Isle of Man,Israel,Italy,Jersey,Jordan,Kenya,Kuwait,Lao,People&apos;s Democratic Republic,Latvia,Lebanon,Lesotho,Liberia,Libya</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Liechtenstein,Lithuania,Luxembourg,Macedonia,Madagascar,Malawi,Mali,Malta,Mauritania,Mauritius,Mayotte,Moldova,Monaco,Mongolia,Montenegro,Morocco,Mozambique,Namibia,Netherlands,Niger,Nigeria,Norway,Oman,Palestine,Pitcairn,Poland,Portugal,Qatar,Romania</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Russia,Rwanda,Réunion,Saint Helena,San,Marino,Sao,Tome,and,Principe,Senegal,Serbia,Seychelles,Sierra,Leone,Slovakia,Slovenia,Somalia,South Africa,South Georgia,South Sudan,Spain,Sudan,Suriname,Svalbard,and,Jan,Mayen,Islands,Sweden,Switzerland,Syria</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Tanzania,Togo,Tunisia,Turkey,Uganda,Ukraine,United Arab Emirates,Vatican City,Western Sahara,Yemen,Zambia,Zimbabwe,United Kingdom,Ireland</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Company</field>
+                <operation>startsWith</operation>
+                <value>s,t,u,v,w,x,y,z</value>
+            </criteriaItems>
+            <template>All_Email_Templates/LeadsNewassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>BDR_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>United States</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.State</field>
+                <operation>equals</operation>
+                <value>New York</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Company</field>
+                <operation>startsWith</operation>
+                <value>a,b,c,d,e,f,g,h,i,j,k,1,2,3,4,5,6,7,8,9,0</value>
+            </criteriaItems>
+            <template>All_Email_Templates/LeadsNewassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>BDR_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>United States</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.State</field>
+                <operation>equals</operation>
+                <value>New York</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Company</field>
+                <operation>startsWith</operation>
+                <value>l,L,m,n,o,p</value>
+            </criteriaItems>
+            <template>All_Email_Templates/LeadsNewassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>sean.adhamy@openexc.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>United States</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.State</field>
+                <operation>equals</operation>
+                <value>New York</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Company</field>
+                <operation>startsWith</operation>
+                <value>q,r,s,t,u,v,w,x,y,z</value>
+            </criteriaItems>
+            <template>All_Email_Templates/LeadsNewassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>kaley.emmorey@openexc.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>United States</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.State</field>
+                <operation>equals</operation>
+                <value>California</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Company</field>
+                <operation>startsWith</operation>
+                <value>a,b,c,d,e,f,g,h,i,j,k,l,L,M,1,2,3,4,5,6,7,8,9,0</value>
+            </criteriaItems>
+            <template>All_Email_Templates/LeadsNewassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>BDR_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>United States</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.State</field>
+                <operation>equals</operation>
+                <value>California</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Company</field>
+                <operation>startsWith</operation>
+                <value>n,o,p,q,r,s,t,u,v,w,x,y,z</value>
+            </criteriaItems>
+            <template>All_Email_Templates/LeadsNewassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>BDR_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>United States</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.State</field>
+                <operation>equals</operation>
+                <value>Alaska,Arizona,Colorado,Idaho,Maine,Nebraska,New Hampshire,Oreon,Rhode Island,Vermont,Wyoming</value>
+            </criteriaItems>
+            <template>All_Email_Templates/LeadsNewassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>BDR_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>United States</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.State</field>
+                <operation>equals</operation>
+                <value>Connecticut,Iowa,Illinois,Indiana,Massachusetts,Michigan,Minnesota,Ohio,Pennsylvania,Virginia,West Virginia</value>
+            </criteriaItems>
+            <template>All_Email_Templates/LeadsNewassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>kaley.emmorey@openexc.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>United States</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.State</field>
+                <operation>equals</operation>
+                <value>Delaware,Nevada,Hawaii,Washington</value>
+            </criteriaItems>
+            <template>All_Email_Templates/LeadsNewassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>sean.adhamy@openexc.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>United States</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.State</field>
+                <operation>equals</operation>
+                <value>Florida,Georgia,Kansas,Louisiana,Missouri,Montana,New Jersey,New Mexico,North Dakota,Oklahoma,South Dakota,Tennessee,Texas,Wisconsin</value>
+            </criteriaItems>
+            <template>All_Email_Templates/LeadsNewassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>BDR_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>United States</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.State</field>
+                <operation>equals</operation>
+                <value>Alabama,Arkansas,District of Columbia,Kentucky,Maryland,Mississippi,North Carolina,South Carolina,Utah</value>
+            </criteriaItems>
+            <template>All_Email_Templates/LeadsNewassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Unsorted_Leads</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>equals</operation>
+                <value>Website</value>
+            </criteriaItems>
+        </ruleEntry>
+    </assignmentRule>
+    <assignmentRule>
+        <fullName>New Hubspot Assignment Region</fullName>
+        <active>false</active>
+        <ruleEntry>
+            <assignedTo>BDR_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>(1 OR 2 OR 3) AND 4</booleanFilter>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Anguilla,Antigua and Barbuda,Argentina,Aruba,Bahamas,Barbados,Belize,Bermuda,Bolivia,Brazil,Canada,Cayman Islands,Chile,Colombia,Costa Rica,Cuba,Curaçao,Dominica,Dominican Republic,Ecuador,El Salvador,Falkland,Islands,French,Guiana,Greenland,Grenada,Guade</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Grenada,Guadeloupe,Guatemala,Guyana,Haiti,Honduras,Jamaica,Martinique,Mexico,Montserrat,Nicaragua,Panama,Paraguay,Peru,Puerto Rico,Saint Barthélemy,Saint Kitts and Nevis,Saint Lucia,Saint Martin,Saint Pierre and Miquelon,Saint Vincent and the Grenadines</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Sint Maarten,Trinidad and Tobago,Turks and Caicos Islands,US Minor Outlying Islands,United States,Venezuela,Virgin Islands,British Virgin Islands U.S.</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>equals</operation>
+                <value>Website</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>jini.kim@openexc.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <booleanFilter>(1 OR 2 OR 3) AND 4</booleanFilter>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Afghanistan,American Samoa,Antarctica,Australia,Azerbaijan,Bahrain,Bangladesh,Bhutan,Brunei,Darussalam,Cambodia,China,Christmas Island,Cocos Islands,Cook Islands,Fiji,French Southern Territories,Heard and McDonald Islands,India,Indonesia,Japan,Macau</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Malaysia,Maldives,Marshall Islands,Micronesia,Myanmar,Nauru,Nepal,New Caledonia,New Zealand,Niue,Norfolk Island,North Korea,Northern Mariana Islands,Pakistan,Palau,Papua,New Guinea,Philippines,Samoa,Saudi Arabia,Singapore,Solomon Islands,South Korea</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>SrI Lanka,Taiwan,Thailand,Timor-Leste,Tokelau,Tonga,Tuvalu,Vanuatu,Vietnam,Wallis and Futuna</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>equals</operation>
+                <value>Website</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>christian.bones@openexc.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <booleanFilter>(1 OR 2 OR 3 OR 4 OR 5 OR 6) AND 7</booleanFilter>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Albania,Algeria,Andorra,Angola,Armenia,Austria,Belarus,Belgium,Benin,Bonaire Sint Eustatius and,Saba,Bosnia and Herzegovina,Botswana,Bouvet Island,British Indian Ocean Territory,Bulgaria,Burkina Faso,Burundi,Cameroon,Cape Verde,Central African Republic</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Chad,Comoros,Congo,Democratic Republic of the Congo,Republic of the Croatia,Cyprus,Czech Republic,Côte d&apos;Ivoire,Denmark,Djibouti,Egypt,Equatorial,Guinea,Eritrea,Estonia,Eswatini (Swaziland),Ethiopia,Faroe Islands,Finland,France,French Polynesia,Gabon</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Gambia,Georgia,Germany,Ghana,Gibraltar,Greece,Guam,Guernsey,Guinea,Guinea-Bissau,Holy See,Hungary,Iceland,Iran,Iraq,Ireland,Isle of Man,Israel,Italy,Jersey,Jordan,Kenya,Kuwait,Lao,People&apos;s Democratic Republic,Latvia,Lebanon,Lesotho,Liberia,Libya</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Liechtenstein,Lithuania,Luxembourg,Macedonia,Madagascar,Malawi,Mali,Malta,Mauritania,Mauritius,Mayotte,Moldova,Monaco,Mongolia,Montenegro,Morocco,Mozambique,Namibia,Netherlands,Niger,Nigeria,Norway,Oman,Palestine,Pitcairn,Poland,Portugal,Qatar,Romania</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Russia,Rwanda,Réunion,Saint Helena,San,Marino,Sao,Tome,and,Principe,Senegal,Serbia,Seychelles,Sierra,Leone,Slovakia,Slovenia,Somalia,South Africa,South Georgia,South Sudan,Spain,Sudan,Suriname,Svalbard,and,Jan,Mayen,Islands,Sweden,Switzerland,Syria</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Tajikistan,Tanzania,Togo,Tunisia,Turkey,Turkmenistan,Uganda,Ukraine,United Arab Emirates,United Kingdom,Uruguay,Uzbekistan,Western,Sahara,Yemen,Zambia,Zimbabwe,Åland Islands</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>equals</operation>
+                <value>Website</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Unsorted_Leads</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>equals</operation>
+                <value>Website</value>
+            </criteriaItems>
+        </ruleEntry>
+    </assignmentRule>
+</AssignmentRules>

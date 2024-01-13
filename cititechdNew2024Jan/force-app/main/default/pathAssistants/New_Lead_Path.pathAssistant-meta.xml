@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Lead</entityName>
+    <fieldName>Status</fieldName>
+    <masterLabel>New Lead Path</masterLabel>
+    <pathAssistantSteps>
+        <fieldNames>Reason_for_Inquiry__c</fieldNames>
+        <fieldNames>Website_Forms__c</fieldNames>
+        <fieldNames>Inquiry_Comments__c</fieldNames>
+        <fieldNames>LeadSource</fieldNames>
+        <fieldNames>MAL_Exception__c</fieldNames>
+        <info>&lt;p&gt;&lt;b style=&quot;font-size: 13px;&quot;&gt;Marketing Accepted Lead: &lt;/b&gt;&lt;span style=&quot;font-size: 13px;&quot;&gt;Status to automatically set on MAL based off the Marketing HubSpot Score 0-49. This score will increase or decrease based off interactions and weighting and will be Read only until it moves to MQL. If this is an outlier, please contact your Manager or SF Admin to have them check off the MAL Exception checkbox.&lt;/span&gt;&lt;/p&gt;</info>
+        <picklistValueName>MAL</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Reason_for_Inquiry__c</fieldNames>
+        <fieldNames>Website_Forms__c</fieldNames>
+        <fieldNames>Inquiry_Comments__c</fieldNames>
+        <fieldNames>LeadSource</fieldNames>
+        <fieldNames>Lead_Score__c</fieldNames>
+        <info>&lt;p&gt;&lt;b style=&quot;font-size: 13px;&quot;&gt;Marketing Qualified Lead: &lt;/b&gt;&lt;span style=&quot;font-size: 13px;&quot;&gt;Status to automatically set on MQL based off the Marketing HubSpot Score 50-99. This score will increase or decrease based off interactions and weighting. Specific Contact Forms or Marketing campaigns automatically go to the MQL and should get routed to Sales. There will be a 24 hour SLA for BDRs to move these to SAL.&lt;/span&gt;&lt;/p&gt;</info>
+        <picklistValueName>MQL</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Name</fieldNames>
+        <fieldNames>Company</fieldNames>
+        <fieldNames>Title</fieldNames>
+        <fieldNames>Address</fieldNames>
+        <fieldNames>Lead_Score__c</fieldNames>
+        <info>&lt;p&gt;&lt;b&gt;New&lt;/b&gt;: Used temporarily until Deployment of HubSpot. &amp;#39;New&amp;#39; Status is to be eventually sunset.&lt;/p&gt;</info>
+        <picklistValueName>New</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Nurture_Reason__c</fieldNames>
+        <fieldNames>Nurture_Campaign_Length__c</fieldNames>
+        <fieldNames>Nurture_Reason_Other__c</fieldNames>
+        <fieldNames>Lead_Score__c</fieldNames>
+        <info>&lt;p&gt;&lt;b&gt;Nurture&lt;/b&gt;: Please populate reason and campaign length of Nurture.&lt;/p&gt;</info>
+        <picklistValueName>Nurture</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Reason_for_Inquiry__c</fieldNames>
+        <fieldNames>Website_Forms__c</fieldNames>
+        <fieldNames>Inquiry_Comments__c</fieldNames>
+        <fieldNames>Expected_Services__c</fieldNames>
+        <fieldNames>Discovery_Meeting_Scheduled__c</fieldNames>
+        <info>&lt;p&gt;&lt;b style=&quot;font-size: 13px;&quot;&gt;Sales Accepted Lead: &lt;/b&gt;&lt;span style=&quot;font-size: 13px;&quot;&gt;Leads that get routed to the BDR team automatically with a Lead Score of 100+. Will default to a Lead Queue with a 24 hour SLA Acceptance. SAL Records can be moved to Converted/SQL and an Opportunity can be generated once a meeting is set or Unqualified.&lt;/span&gt;&lt;/p&gt;</info>
+        <picklistValueName>SAL</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Discovery_Meeting_Scheduled__c</fieldNames>
+        <fieldNames>Expected_Services__c</fieldNames>
+        <info>&lt;p&gt;&lt;b&gt;Sales Qualified Lead:&lt;/b&gt; Converted lead into Opportunity. &lt;/p&gt;</info>
+        <picklistValueName>SQL</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Unqualified_Reason__c</fieldNames>
+        <fieldNames>Unqualified_Reason_Other__c</fieldNames>
+        <fieldNames>Lead_Score__c</fieldNames>
+        <info>&lt;p&gt;&lt;b&gt;Unqualified&lt;/b&gt;: Please populate reason/details&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</info>
+        <picklistValueName>Unqualified</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>__MASTER__</recordTypeName>
+</PathAssistant>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <layouts>
+        <layout>Corporate Services</layout>
+        <sections>
+            <label></label>
+            <section>Billing Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Closed Comments</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Closed Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Date/Time Stamps</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Marketing Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Qualification Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Vendors and Pass-Through Costs</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Institutional Business</layout>
+        <sections>
+            <label></label>
+            <section>Billing Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Closed Comments</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Closed Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Date/Time Stamps</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Discovery Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Marketing Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Solution Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Vendors and Pass-Through Costs</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Knovio New/Existing/Upsell</layout>
+        <sections>
+            <label></label>
+            <section>Billing Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Closed Comments</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Closed Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Marketing Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>New Business (Not Used)</layout>
+        <sections>
+            <label></label>
+            <section>Closed Comments</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Closed Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Marketing Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Opportunity Layout (Not Used)</layout>
+        <sections>
+            <label></label>
+            <section>Closed Information</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

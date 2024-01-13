@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Client__c</fullName>
+    <externalId>false</externalId>
+    <label>Client</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <controllingField>Connection_Type__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>VidyoDesktop</fullName>
+                <default>false</default>
+                <label>VidyoDesktop</label>
+            </value>
+            <value>
+                <fullName>VidyoMobile</fullName>
+                <default>false</default>
+                <label>VidyoMobile</label>
+            </value>
+            <value>
+                <fullName>Zoom Desktop App</fullName>
+                <default>false</default>
+                <label>Zoom Desktop App</label>
+            </value>
+            <value>
+                <fullName>Zoom Cloud Mobile</fullName>
+                <default>false</default>
+                <label>Zoom Cloud Mobile</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Vidyo</controllingFieldValue>
+            <valueName>VidyoDesktop</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Vidyo</controllingFieldValue>
+            <valueName>VidyoMobile</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Zoom</controllingFieldValue>
+            <valueName>Zoom Desktop App</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Zoom</controllingFieldValue>
+            <valueName>Zoom Cloud Mobile</valueName>
+        </valueSettings>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

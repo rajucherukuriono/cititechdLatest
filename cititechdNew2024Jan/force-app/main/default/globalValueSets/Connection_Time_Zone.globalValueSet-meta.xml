@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Pacific/Kiritimati	GMT+14:00</fullName>
+        <default>false</default>
+        <label>Pacific/Kiritimati	GMT+14:00</label>
+    </customValue>
+    <customValue>
+        <fullName>Pacific/Enderbury	GMT+13:00</fullName>
+        <default>false</default>
+        <label>Pacific/Enderbury	GMT+13:00</label>
+    </customValue>
+    <customValue>
+        <fullName>Pacific/Tongatapu	GMT+13:00</fullName>
+        <default>false</default>
+        <label>Pacific/Tongatapu	GMT+13:00</label>
+    </customValue>
+    <customValue>
+        <fullName>Pacific/Chatham	GMT+12:45</fullName>
+        <default>false</default>
+        <label>Pacific/Chatham	GMT+12:45</label>
+    </customValue>
+    <customValue>
+        <fullName>Pacific/Auckland	GMT+12:00</fullName>
+        <default>false</default>
+        <label>Pacific/Auckland	GMT+12:00</label>
+    </customValue>
+    <customValue>
+        <fullName>Pacific/Fiji	GMT+12:00</fullName>
+        <default>false</default>
+        <label>Pacific/Fiji	GMT+12:00</label>
+    </customValue>
+    <customValue>
+        <fullName>Asia/Kamchatka	GMT+12:00</fullName>
+        <default>false</default>
+        <label>Asia/Kamchatka	GMT+12:00</label>
+    </customValue>
+    <customValue>
+        <fullName>Pacific/Norfolk	GMT+11:30</fullName>
+        <default>false</default>
+        <label>Pacific/Norfolk	GMT+11:30</label>
+    </customValue>
+    <customValue>
+        <fullName>Australia/Lord_Howe	GMT+11:00</fullName>
+        <default>false</default>
+        <label>Australia/Lord_Howe	GMT+11:00</label>
+    </customValue>
+    <customValue>
+        <fullName>Pacific/Guadalcanal	GMT+11:00</fullName>
+        <default>false</default>
+        <label>Pacific/Guadalcanal	GMT+11:00</label>
+    </customValue>
+    <customValue>
+        <fullName>Australia/Adelaide	GMT+10:30</fullName>
+        <default>false</default>
+        <label>Australia/Adelaide	GMT+10:30</label>
+    </customValue>
+    <customValue>
+        <fullName>Australia/Sydney	GMT+10:00</fullName>
+        <default>false</default>
+        <label>Australia/Sydney	GMT+10:00</label>
+    </customValue>
+    <customValue>
+        <fullName>Australia/Brisbane	GMT+10:00</fullName>
+        <default>false</default>
+        <label>Australia/Brisbane	GMT+10:00</label>
+    </customValue>
+    <customValue>
+        <fullName>Australia/Darwin	GMT+09:30</fullName>
+        <default>false</default>
+        <label>Australia/Darwin	GMT+09:30</label>
+    </customValue>
+    <customValue>
+        <fullName>Asia/Seoul	GMT+09:00</fullName>
+        <default>false</default>
+        <label>Asia/Seoul	GMT+09:00</label>
+    </customValue>
+    <customValue>
+        <fullName>Asia/Tokyo	GMT+09:00</fullName>
+        <default>false</default>
+        <label>Asia/Tokyo	GMT+09:00</label>
+    </customValue>
+    <customValue>
+        <fullName>Asia/Hong_Kong	GMT+08:00</fullName>
+        <default>false</default>
+        <label>Asia/Hong_Kong	GMT+08:00</label>
+    </customValue>
+    <customValue>
+        <fullName>Asia/Kuala_Lumpur	GMT+08:00</fullName>
+        <default>false</default>
+        <label>Asia/Kuala_Lumpur	GMT+08:00</label>
+    </customValue>
+    <customValue>
+        <fullName>Asia/Manila	GMT+08:00</fullName>
+        <default>false</default>
+        <label>Asia/Manila	GMT+08:00</label>
+    </customValue>
+    <customValue>
+        <fullName>Asia/Shanghai	GMT+08:00</fullName>
+        <default>false</default>
+        <label>Asia/Shanghai	GMT+08:00</label>
+    </customValue>
+    <customValue>
+        <fullName>Asia/Singapore	GMT+08:00</fullName>
+        <default>false</default>
+        <label>Asia/Singapore	GMT+08:00</label>
+    </customValue>
+    <customValue>
+        <fullName>Asia/Taipei	GMT+08:00</fullName>
+        <default>false</default>
+        <label>Asia/Taipei	GMT+08:00</label>
+    </customValue>
+    <customValue>
+        <fullName>Australia/Perth	GMT+08:00</fullName>
+        <default>false</default>
+        <label>Australia/Perth	GMT+08:00</label>
+    </customValue>
+    <customValue>
+        <fullName>Asia/Bangkok	GMT+07:00</fullName>
+        <default>false</default>
+        <label>Asia/Bangkok	GMT+07:00</label>
+    </customValue>
+    <customValue>
+        <fullName>Asia/Ho_Chi_Minh	GMT+07:00</fullName>
+        <default>false</default>
+        <label>Asia/Ho_Chi_Minh	GMT+07:00</label>
+    </customValue>
+    <customValue>
+        <fullName>Asia/Jakarta	GMT+07:00</fullName>
+        <default>false</default>
+        <label>Asia/Jakarta	GMT+07:00</label>
+    </customValue>
+    <customValue>
+        <fullName>Asia/Rangoon	GMT+06:30</fullName>
+        <default>false</default>
+        <label>Asia/Rangoon	GMT+06:30</label>
+    </customValue>
+    <customValue>
+        <fullName>Asia/Dhaka	GMT+06:00</fullName>
+        <default>false</default>
+        <label>Asia/Dhaka	GMT+06:00</label>
+    </customValue>
+    <customValue>
+        <fullName>Asia/Kathmandu	GMT+05:45</fullName>
+        <default>false</default>
+        <label>Asia/Kathmandu	GMT+05:45</label>
+    </customValue>
+    <customValue>
+        <fullName>Asia/Colombo	GMT+05:30</fullName>
+        <default>false</default>
+        <label>Asia/Colombo	GMT+05:30</label>
+    </customValue>
+    <customValue>
+        <fullName>Asia/Kolkata	GMT+05:30</fullName>
+        <default>false</default>
+        <label>Asia/Kolkata	GMT+05:30</label>
+    </customValue>
+    <customValue>
+        <fullName>Asia/Karachi	GMT+05:00</fullName>
+        <default>false</default>
+        <label>Asia/Karachi	GMT+05:00</label>
+    </customValue>
+    <customValue>
+        <fullName>Asia/Tashkent	GMT+05:00</fullName>
+        <default>false</default>
+        <label>Asia/Tashkent	GMT+05:00</label>
+    </customValue>
+    <customValue>
+        <fullName>Asia/Yekaterinburg	GMT+05:00</fullName>
+        <default>false</default>
+        <label>Asia/Yekaterinburg	GMT+05:00</label>
+    </customValue>
+    <customValue>
+        <fullName>Asia/Kabul	GMT+04:30</fullName>
+        <default>false</default>
+        <label>Asia/Kabul	GMT+04:30</label>
+    </customValue>
+    <customValue>
+        <fullName>Asia/Baku	GMT+04:00</fullName>
+        <default>false</default>
+        <label>Asia/Baku	GMT+04:00</label>
+    </customValue>
+    <customValue>
+        <fullName>Asia/Dubai	GMT+04:00</fullName>
+        <default>false</default>
+        <label>Asia/Dubai	GMT+04:00</label>
+    </customValue>
+    <customValue>
+        <fullName>Asia/Tbilisi	GMT+04:00</fullName>
+        <default>false</default>
+        <label>Asia/Tbilisi	GMT+04:00</label>
+    </customValue>
+    <customValue>
+        <fullName>Asia/Yerevan	GMT+04:00</fullName>
+        <default>false</default>
+        <label>Asia/Yerevan	GMT+04:00</label>
+    </customValue>
+    <customValue>
+        <fullName>Asia/Tehran	GMT+03:30</fullName>
+        <default>false</default>
+        <label>Asia/Tehran	GMT+03:30</label>
+    </customValue>
+    <customValue>
+        <fullName>Africa/Nairobi	GMT+03:00</fullName>
+        <default>false</default>
+        <label>Africa/Nairobi	GMT+03:00</label>
+    </customValue>
+    <customValue>
+        <fullName>Asia/Baghdad	GMT+03:00</fullName>
+        <default>false</default>
+        <label>Asia/Baghdad	GMT+03:00</label>
+    </customValue>
+    <customValue>
+        <fullName>Asia/Kuwait	GMT+03:00</fullName>
+        <default>false</default>
+        <label>Asia/Kuwait	GMT+03:00</label>
+    </customValue>
+    <customValue>
+        <fullName>Asia/Riyadh	GMT+03:00</fullName>
+        <default>false</default>
+        <label>Asia/Riyadh	GMT+03:00</label>
+    </customValue>
+    <customValue>
+        <fullName>Europe/Minsk	GMT+03:00</fullName>
+        <default>false</default>
+        <label>Europe/Minsk	GMT+03:00</label>
+    </customValue>
+    <customValue>
+        <fullName>Europe/Moscow	GMT+03:00</fullName>
+        <default>false</default>
+        <label>Europe/Moscow	GMT+03:00</label>
+    </customValue>
+    <customValue>
+        <fullName>Africa/Cairo	GMT+03:00</fullName>
+        <default>false</default>
+        <label>Africa/Cairo	GMT+03:00</label>
+    </customValue>
+    <customValue>
+        <fullName>Asia/Beirut	GMT+03:00</fullName>
+        <default>false</default>
+        <label>Asia/Beirut	GMT+03:00</label>
+    </customValue>
+    <customValue>
+        <fullName>Asia/Jerusalem	GMT+03:00</fullName>
+        <default>false</default>
+        <label>Asia/Jerusalem	GMT+03:00</label>
+    </customValue>
+    <customValue>
+        <fullName>Europe/Athens	GMT+03:00</fullName>
+        <default>false</default>
+        <label>Europe/Athens	GMT+03:00</label>
+    </customValue>
+    <customValue>
+        <fullName>Europe/Bucharest	GMT+03:00</fullName>
+        <default>false</default>
+        <label>Europe/Bucharest	GMT+03:00</label>
+    </customValue>
+    <customValue>
+        <fullName>Europe/Helsinki	GMT+03:00</fullName>
+        <default>false</default>
+        <label>Europe/Helsinki	GMT+03:00</label>
+    </customValue>
+    <customValue>
+        <fullName>Europe/Istanbul	GMT+03:00</fullName>
+        <default>false</default>
+        <label>Europe/Istanbul	GMT+03:00</label>
+    </customValue>
+    <customValue>
+        <fullName>Africa/Johannesburg	GMT+02:00</fullName>
+        <default>false</default>
+        <label>Africa/Johannesburg	GMT+02:00</label>
+    </customValue>
+    <customValue>
+        <fullName>Europe/Amsterdam	GMT+02:00</fullName>
+        <default>false</default>
+        <label>Europe/Amsterdam	GMT+02:00</label>
+    </customValue>
+    <customValue>
+        <fullName>Europe/Berlin	GMT+02:00</fullName>
+        <default>false</default>
+        <label>Europe/Berlin	GMT+02:00</label>
+    </customValue>
+    <customValue>
+        <fullName>Europe/Brussels	GMT+02:00</fullName>
+        <default>false</default>
+        <label>Europe/Brussels	GMT+02:00</label>
+    </customValue>
+    <customValue>
+        <fullName>Europe/Paris	GMT+02:00</fullName>
+        <default>false</default>
+        <label>Europe/Paris	GMT+02:00</label>
+    </customValue>
+    <customValue>
+        <fullName>Europe/Prague	GMT+02:00</fullName>
+        <default>false</default>
+        <label>Europe/Prague	GMT+02:00</label>
+    </customValue>
+    <customValue>
+        <fullName>Europe/Rome	GMT+02:00</fullName>
+        <default>false</default>
+        <label>Europe/Rome	GMT+02:00</label>
+    </customValue>
+    <customValue>
+        <fullName>Europe/Lisbon	GMT+01:00</fullName>
+        <default>false</default>
+        <label>Europe/Lisbon	GMT+01:00</label>
+    </customValue>
+    <customValue>
+        <fullName>Africa/Algiers	GMT+01:00</fullName>
+        <default>false</default>
+        <label>Africa/Algiers	GMT+01:00</label>
+    </customValue>
+    <customValue>
+        <fullName>Europe/London	GMT+01:00</fullName>
+        <default>false</default>
+        <label>Europe/London	GMT+01:00</label>
+    </customValue>
+    <customValue>
+        <fullName>Atlantic/Cape_Verde	GMT–01:00</fullName>
+        <default>false</default>
+        <label>Atlantic/Cape_Verde	GMT–01:00</label>
+    </customValue>
+    <customValue>
+        <fullName>Africa/Casablanca	GMT+00:00</fullName>
+        <default>false</default>
+        <label>Africa/Casablanca	GMT+00:00</label>
+    </customValue>
+    <customValue>
+        <fullName>Europe/Dublin	GMT+00:00</fullName>
+        <default>false</default>
+        <label>Europe/Dublin	GMT+00:00</label>
+    </customValue>
+    <customValue>
+        <fullName>GMT	GMT+00:00</fullName>
+        <default>false</default>
+        <label>GMT	GMT+00:00</label>
+    </customValue>
+    <customValue>
+        <fullName>America/Scoresbysund	GMT–00:00</fullName>
+        <default>false</default>
+        <label>America/Scoresbysund	GMT–00:00</label>
+    </customValue>
+    <customValue>
+        <fullName>Atlantic/Azores	GMT–00:00</fullName>
+        <default>false</default>
+        <label>Atlantic/Azores	GMT–00:00</label>
+    </customValue>
+    <customValue>
+        <fullName>Atlantic/South_Georgia	GMT–02:00</fullName>
+        <default>false</default>
+        <label>Atlantic/South_Georgia	GMT–02:00</label>
+    </customValue>
+    <customValue>
+        <fullName>America/St_Johns	GMT–02:30</fullName>
+        <default>false</default>
+        <label>America/St_Johns	GMT–02:30</label>
+    </customValue>
+    <customValue>
+        <fullName>America/Sao_Paulo	GMT–03:00</fullName>
+        <default>false</default>
+        <label>America/Sao_Paulo	GMT–03:00</label>
+    </customValue>
+    <customValue>
+        <fullName>America/Argentina/Buenos_Aires	GMT–03:00</fullName>
+        <default>false</default>
+        <label>America/Argentina/Buenos_Aires	GMT–03:00</label>
+    </customValue>
+    <customValue>
+        <fullName>America/Santiago	GMT–03:00</fullName>
+        <default>false</default>
+        <label>America/Santiago	GMT–03:00</label>
+    </customValue>
+    <customValue>
+        <fullName>America/Halifax	GMT–03:00</fullName>
+        <default>false</default>
+        <label>America/Halifax	GMT–03:00</label>
+    </customValue>
+    <customValue>
+        <fullName>America/Puerto_Rico	GMT–04:00</fullName>
+        <default>false</default>
+        <label>America/Puerto_Rico	GMT–04:00</label>
+    </customValue>
+    <customValue>
+        <fullName>Atlantic/Bermuda	GMT–04:00</fullName>
+        <default>false</default>
+        <label>Atlantic/Bermuda	GMT–04:00</label>
+    </customValue>
+    <customValue>
+        <fullName>America/Caracas	GMT–04:30</fullName>
+        <default>false</default>
+        <label>America/Caracas	GMT–04:30</label>
+    </customValue>
+    <customValue>
+        <fullName>America/Indiana/Indianapolis	GMT–04:00</fullName>
+        <default>false</default>
+        <label>America/Indiana/Indianapolis	GMT–04:00</label>
+    </customValue>
+    <customValue>
+        <fullName>America/New_York	GMT–04:00</fullName>
+        <default>true</default>
+        <label>America/New_York	GMT–04:00</label>
+    </customValue>
+    <customValue>
+        <fullName>America/Bogota	GMT–05:00</fullName>
+        <default>false</default>
+        <label>America/Bogota	GMT–05:00</label>
+    </customValue>
+    <customValue>
+        <fullName>America/Lima	GMT–05:00</fullName>
+        <default>false</default>
+        <label>America/Lima	GMT–05:00</label>
+    </customValue>
+    <customValue>
+        <fullName>America/Panama	GMT–05:00</fullName>
+        <default>false</default>
+        <label>America/Panama	GMT–05:00</label>
+    </customValue>
+    <customValue>
+        <fullName>America/Mexico_City	GMT–05:00</fullName>
+        <default>false</default>
+        <label>America/Mexico_City	GMT–05:00</label>
+    </customValue>
+    <customValue>
+        <fullName>America/Chicago	GMT–05:00</fullName>
+        <default>false</default>
+        <label>America/Chicago	GMT–05:00</label>
+    </customValue>
+    <customValue>
+        <fullName>America/El_Salvador	GMT–06:00</fullName>
+        <default>false</default>
+        <label>America/El_Salvador	GMT–06:00</label>
+    </customValue>
+    <customValue>
+        <fullName>America/Denver	GMT–06:00</fullName>
+        <default>false</default>
+        <label>America/Denver	GMT–06:00</label>
+    </customValue>
+    <customValue>
+        <fullName>America/Mazatlan	GMT–06:00</fullName>
+        <default>false</default>
+        <label>America/Mazatlan	GMT–06:00</label>
+    </customValue>
+    <customValue>
+        <fullName>America/Phoenix	GMT–07:00</fullName>
+        <default>false</default>
+        <label>America/Phoenix	GMT–07:00</label>
+    </customValue>
+    <customValue>
+        <fullName>America/Los_Angeles	GMT–07:00</fullName>
+        <default>false</default>
+        <label>America/Los_Angeles	GMT–07:00</label>
+    </customValue>
+    <customValue>
+        <fullName>America/Tijuana	GMT–07:00</fullName>
+        <default>false</default>
+        <label>America/Tijuana	GMT–07:00</label>
+    </customValue>
+    <customValue>
+        <fullName>Pacific/Pitcairn	GMT–08:00</fullName>
+        <default>false</default>
+        <label>Pacific/Pitcairn	GMT–08:00</label>
+    </customValue>
+    <customValue>
+        <fullName>America/Anchorage	GMT–08:00</fullName>
+        <default>false</default>
+        <label>America/Anchorage	GMT–08:00</label>
+    </customValue>
+    <customValue>
+        <fullName>Pacific/Gambier	GMT–09:00</fullName>
+        <default>false</default>
+        <label>Pacific/Gambier	GMT–09:00</label>
+    </customValue>
+    <customValue>
+        <fullName>America/Adak	GMT–9:00</fullName>
+        <default>false</default>
+        <label>America/Adak	GMT–9:00</label>
+    </customValue>
+    <customValue>
+        <fullName>Pacific/Marquesas	GMT–09:30</fullName>
+        <default>false</default>
+        <label>Pacific/Marquesas	GMT–09:30</label>
+    </customValue>
+    <customValue>
+        <fullName>Pacific/Honolulu	GMT–10:00</fullName>
+        <default>false</default>
+        <label>Pacific/Honolulu	GMT–10:00</label>
+    </customValue>
+    <customValue>
+        <fullName>Pacific/Niue	GMT–11:00</fullName>
+        <default>false</default>
+        <label>Pacific/Niue	GMT–11:00</label>
+    </customValue>
+    <customValue>
+        <fullName>Pacific/Pago_Pago	GMT–11:00</fullName>
+        <default>false</default>
+        <label>Pacific/Pago_Pago	GMT–11:00</label>
+    </customValue>
+    <masterLabel>Connection Time Zone</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

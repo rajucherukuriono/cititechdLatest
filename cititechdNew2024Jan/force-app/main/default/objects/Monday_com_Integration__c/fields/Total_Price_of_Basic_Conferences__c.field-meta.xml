@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Price_of_Basic_Conferences__c</fullName>
+    <description>Basic Conference Streaming Package</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Basic Conference Streaming Package</inlineHelpText>
+    <label>Total Price of Basic Conferences</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

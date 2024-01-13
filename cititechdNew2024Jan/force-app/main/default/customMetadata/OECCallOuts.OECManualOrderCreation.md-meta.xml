@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>OECManualOrderCreation</label>
+    <protected>false</protected>
+    <values>
+        <field>DevAccountId__c</field>
+        <value xsi:type="xsd:string">9f331e16-3360-48f2-9ce9-97992253bc0e</value>
+    </values>
+    <values>
+        <field>DevAuthURL__c</field>
+        <value xsi:type="xsd:string">https://stage-oe-api.com/auth</value>
+    </values>
+    <values>
+        <field>DevEndpointURL__c</field>
+        <value xsi:type="xsd:string">https://stage-oe-api.com/oeintegration/v1/salesforce/events</value>
+    </values>
+    <values>
+        <field>DevPassword__c</field>
+        <value xsi:type="xsd:string">ARtv9MDof!8XsX</value>
+    </values>
+    <values>
+        <field>DevUserName__c</field>
+        <value xsi:type="xsd:string">salesforceintg@stage.com</value>
+    </values>
+    <values>
+        <field>ProdAccountId__c</field>
+        <value xsi:type="xsd:string">771c41c9-4693-4be0-a3d4-839e0b2e2485</value>
+    </values>
+    <values>
+        <field>ProdAuthURL__c</field>
+        <value xsi:type="xsd:string">https://oe-api.com/auth</value>
+    </values>
+    <values>
+        <field>ProdCancelEndpointURL__c</field>
+        <value xsi:type="xsd:string">https://oe-api.com/oeintegration/v1/salesforce/events/{eventId}/status</value>
+    </values>
+    <values>
+        <field>ProdEndpointURL__c</field>
+        <value xsi:type="xsd:string">https://oe-api.com/oeintegration/v1/salesforce/events</value>
+    </values>
+    <values>
+        <field>ProdPassword__c</field>
+        <value xsi:type="xsd:string">pMoy!PzVzC$zp7</value>
+    </values>
+    <values>
+        <field>ProdTeamsCreationEndpointURL__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ProdUserName__c</field>
+        <value xsi:type="xsd:string">salesforce@oeintg.com</value>
+    </values>
+    <values>
+        <field>QAAccountId__c</field>
+        <value xsi:type="xsd:string">8962e64f-8545-47bb-ad56-917749a0756f</value>
+    </values>
+    <values>
+        <field>QAAuthURL__c</field>
+        <value xsi:type="xsd:string">https://dev-oe-api.com/auth</value>
+    </values>
+    <values>
+        <field>QACancelEndpointURL__c</field>
+        <value xsi:type="xsd:string">https://dev-oe-api.com/oeintegration/v1/salesforce/events/{eventId}/status</value>
+    </values>
+    <values>
+        <field>QAEndpointURL__c</field>
+        <value xsi:type="xsd:string">https://dev-oe-api.com/oeintegration/v1/salesforce/events</value>
+    </values>
+    <values>
+        <field>QAPassword__c</field>
+        <value xsi:type="xsd:string">j!vhC1$d0aU9V3</value>
+    </values>
+    <values>
+        <field>QATeamsCreationEndpointURL__c</field>
+        <value xsi:type="xsd:string">https://dev-oe-api.com/oeintegration/v1/microsoft/team</value>
+    </values>
+    <values>
+        <field>QAUserName__c</field>
+        <value xsi:type="xsd:string">salesforceintg@oeintg.dev.com</value>
+    </values>
+    <values>
+        <field>StageCancelEndpointURL__c</field>
+        <value xsi:type="xsd:string">https://stage-oe-api.com/oeintegration/v1/salesforce/events/{eventId}/status</value>
+    </values>
+    <values>
+        <field>StageTeamsCreationEndpointURL__c</field>
+        <value xsi:type="xsd:string">https://dev-oe-api.com/oeintegration/v1/microsoft/team</value>
+    </values>
+</CustomMetadata>

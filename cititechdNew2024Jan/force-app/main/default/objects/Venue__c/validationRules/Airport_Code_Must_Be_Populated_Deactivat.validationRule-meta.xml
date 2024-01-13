@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Airport_Code_Must_Be_Populated_Deactivat</fullName>
+    <active>false</active>
+    <description>If the airport is populated, the airport code must be entered as well.
+
+Deactivated due to request from ticket 37747 03.20.2022</description>
+    <errorConditionFormula>AND(
+NOT(ISNULL(Airport__c)),
+ISBLANK(Airport_Code__c)
+)</errorConditionFormula>
+    <errorDisplayField>Airport_Code__c</errorDisplayField>
+    <errorMessage>If the airport is populated, the airport code must be entered as well</errorMessage>
+</ValidationRule>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomPermission xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Provides access to the business line exception field for the LSEG team for 2023 universal price book
+Permission Set: https://openexchange--partialbox.lightning.force.com/lightning/setup/PermSets/page?address=%2F0PS78000000L5Dm</description>
+    <label>LSEG Business Line Exception Access</label>
+</CustomPermission>

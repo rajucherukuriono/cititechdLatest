@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>On_Site__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>select whether this event requires OE personnel on site or whether they can handle remotely</inlineHelpText>
+    <label>On-Site</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>remote</fullName>
+                <default>true</default>
+                <label>remote</label>
+            </value>
+            <value>
+                <fullName>onsite</fullName>
+                <default>false</default>
+                <label>onsite</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

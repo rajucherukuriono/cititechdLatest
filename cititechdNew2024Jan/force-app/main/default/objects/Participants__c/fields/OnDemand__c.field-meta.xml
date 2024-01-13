@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OnDemand__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Check if OnDemand required</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Check box if Participant Type is Webinar and on demand is needed and then specify how long it is to be available</inlineHelpText>
+    <label>OnDemand</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

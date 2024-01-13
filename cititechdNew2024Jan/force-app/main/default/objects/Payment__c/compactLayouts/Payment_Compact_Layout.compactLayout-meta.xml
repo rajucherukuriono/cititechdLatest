@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Payment_Compact_Layout</fullName>
+    <fields>Order__c</fields>
+    <fields>Invoice__c</fields>
+    <fields>Name</fields>
+    <fields>Payment_Amount_USD__c</fields>
+    <label>Payment Compact Layout</label>
+</CompactLayout>

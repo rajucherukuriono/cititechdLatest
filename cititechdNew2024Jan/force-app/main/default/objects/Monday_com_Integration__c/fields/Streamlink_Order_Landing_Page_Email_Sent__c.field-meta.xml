@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Streamlink_Order_Landing_Page_Email_Sent__c</fullName>
+    <defaultValue>false</defaultValue>
+    <externalId>false</externalId>
+    <inlineHelpText>Email Alert to be sent to Marketing / Colin Hickey to create a new Streamlink Landing Page</inlineHelpText>
+    <label>Streamlink Order Landing Page Email Sent</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

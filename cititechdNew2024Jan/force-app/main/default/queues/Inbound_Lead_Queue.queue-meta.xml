@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>Inbound Lead Queue</name>
+    <queueMembers>
+        <users>
+            <user>christian.bones@openexc.com</user>
+            <user>gib.smith@openexc.com</user>
+            <user>glenna.lynch@openexc.com</user>
+            <user>irene.min@openexc.com</user>
+            <user>jay.lee@openexc.com</user>
+            <user>jeannie.blackwood@openexc.com</user>
+            <user>julia.staffiere@openexc.com</user>
+            <user>matt.cunningham@openexc.com</user>
+            <user>nick.bontkowski@openexc.com</user>
+            <user>rob.garrigan@openexc.com</user>
+            <user>tom.kirby@openexc.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Lead</sobjectType>
+    </queueSobject>
+</Queue>

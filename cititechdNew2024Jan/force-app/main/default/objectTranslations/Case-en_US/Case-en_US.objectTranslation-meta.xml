@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Meeting</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Meetings</value>
+    </caseValues>
+    <layouts>
+        <layout>Case Layout</layout>
+        <sections>
+            <label></label>
+            <section>HSBC Specific Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Host Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Invoice Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>LiveStream PreProduction- OE Live</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Location Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Notes</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>OE Connection Notes</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Post Meeting Follow-up</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Close Case Layout</layout>
+        <layoutType>CaseClose</layoutType>
+        <sections>
+            <label></label>
+            <section>Host Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Location Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Participant Notes</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Post Meeting Follow-up</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label></label>
+        <name>Blank_Email</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Change_Status</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Email</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>NewChildCase</name>
+    </quickActions>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

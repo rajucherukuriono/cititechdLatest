@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Analyst Marketing Event</fullName>
+        <default>false</default>
+        <label>Analyst Marketing Event</label>
+    </customValue>
+    <customValue>
+        <fullName>Annual General Meeting (AGM)</fullName>
+        <default>false</default>
+        <label>Annual General Meeting (AGM)</label>
+    </customValue>
+    <customValue>
+        <fullName>Business Meetings</fullName>
+        <default>false</default>
+        <label>Business Meetings</label>
+    </customValue>
+    <customValue>
+        <fullName>Deal Roadshow</fullName>
+        <default>false</default>
+        <label>Deal Roadshow</label>
+    </customValue>
+    <customValue>
+        <fullName>Earnings Release</fullName>
+        <default>false</default>
+        <label>Earnings Release</label>
+    </customValue>
+    <customValue>
+        <fullName>Education / Training</fullName>
+        <default>false</default>
+        <label>Education / Training</label>
+    </customValue>
+    <customValue>
+        <fullName>Expert Event</fullName>
+        <default>false</default>
+        <label>Expert Event</label>
+    </customValue>
+    <customValue>
+        <fullName>Field Trips/Visits</fullName>
+        <default>false</default>
+        <label>Field Trips/Visits</label>
+    </customValue>
+    <customValue>
+        <fullName>Internal Communications</fullName>
+        <default>false</default>
+        <label>Internal Communications</label>
+    </customValue>
+    <customValue>
+        <fullName>Investor Days/Capital Markets Day</fullName>
+        <default>false</default>
+        <label>Investor Days/Capital Markets Day</label>
+    </customValue>
+    <customValue>
+        <fullName>Non-Deal Roadshow (NDR)</fullName>
+        <default>false</default>
+        <label>Non-Deal Roadshow (NDR)</label>
+    </customValue>
+    <customValue>
+        <fullName>Onsite/Hybrid Conference</fullName>
+        <default>false</default>
+        <label>Onsite/Hybrid Conference</label>
+    </customValue>
+    <customValue>
+        <fullName>Streamlink</fullName>
+        <default>false</default>
+        <label>Streamlink</label>
+    </customValue>
+    <customValue>
+        <fullName>Knovio Subscription</fullName>
+        <default>false</default>
+        <label>Subscription</label>
+    </customValue>
+    <customValue>
+        <fullName>Townhall</fullName>
+        <default>false</default>
+        <label>Townhall</label>
+    </customValue>
+    <customValue>
+        <fullName>Virtual Conference</fullName>
+        <default>false</default>
+        <label>Virtual Conference</label>
+    </customValue>
+    <customValue>
+        <fullName>Virtual Networking Event</fullName>
+        <default>false</default>
+        <label>Virtual Networking Event</label>
+    </customValue>
+    <customValue>
+        <fullName>Virtual Trade Show</fullName>
+        <default>false</default>
+        <label>Virtual Trade Show</label>
+    </customValue>
+    <customValue>
+        <fullName>OETV Research Provider Subscription</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>OETV Research Provider Subscription</label>
+    </customValue>
+    <customValue>
+        <fullName>OETV Internal</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>OETV Internal</label>
+    </customValue>
+    <customValue>
+        <fullName>OETV Event</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>OETV Event</label>
+    </customValue>
+    <customValue>
+        <fullName>OETV Video</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>OETV Video</label>
+    </customValue>
+    <customValue>
+        <fullName>OETV Other</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>OETV Other</label>
+    </customValue>
+    <customValue>
+        <fullName>One-Off</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>One-Off</label>
+    </customValue>
+    <customValue>
+        <fullName>OETV Show</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>OETV Show</label>
+    </customValue>
+    <customValue>
+        <fullName>OETV Asset Manager Subscription</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>OETV Asset Manager Subscription</label>
+    </customValue>
+    <description>Event Type (OE Defined) picklist</description>
+    <masterLabel>Event Type</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

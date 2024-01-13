@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Business_Line__c</fullName>
+    <externalId>false</externalId>
+    <label>Business Line</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Corporate Services</fullName>
+                <default>false</default>
+                <label>Corporate Services</label>
+            </value>
+            <value>
+                <fullName>OE Conference</fullName>
+                <default>false</default>
+                <label>OE Conference</label>
+            </value>
+            <value>
+                <fullName>OE Connect</fullName>
+                <default>false</default>
+                <label>OE Connect</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

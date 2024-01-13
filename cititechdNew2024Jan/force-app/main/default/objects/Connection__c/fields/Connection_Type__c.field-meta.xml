@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Connection_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Connection Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Std Based H.323/SIP</fullName>
+                <default>true</default>
+                <label>Std Based H.323/SIP</label>
+            </value>
+            <value>
+                <fullName>Zoom</fullName>
+                <default>false</default>
+                <label>Zoom</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>View Only</fullName>
+                <default>false</default>
+                <label>View Only</label>
+            </value>
+            <value>
+                <fullName>Vidyo</fullName>
+                <default>false</default>
+                <label>Vidyo</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

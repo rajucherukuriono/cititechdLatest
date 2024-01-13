@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>No_of_Backup_1_1_OE_Video_Eqp_d_Rooms__c</fullName>
+    <externalId>false</externalId>
+    <formula>Order__r.No_Backup_of_1_1_OE_Video_Equipped_Rooms__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>No. of Backup 1:1 OE Video Eqp&apos;d Rooms</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

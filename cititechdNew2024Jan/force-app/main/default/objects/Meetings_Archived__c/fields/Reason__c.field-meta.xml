@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reason__c</fullName>
+    <externalId>false</externalId>
+    <label>Case Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>OE Meetings</fullName>
+                <default>false</default>
+                <label>OE Meetings</label>
+            </value>
+            <value>
+                <fullName>OE Networks</fullName>
+                <default>false</default>
+                <label>OE Networks</label>
+            </value>
+            <value>
+                <fullName>OE Profiles</fullName>
+                <default>false</default>
+                <label>OE Profiles</label>
+            </value>
+            <value>
+                <fullName>Vidyo</fullName>
+                <default>false</default>
+                <label>Vidyo</label>
+            </value>
+            <value>
+                <fullName>Hardware</fullName>
+                <default>false</default>
+                <label>Hardware</label>
+            </value>
+            <value>
+                <fullName>User Management</fullName>
+                <default>false</default>
+                <label>User Management</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

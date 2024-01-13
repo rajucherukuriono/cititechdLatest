@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Participant_Type__c</fullName>
+    <description>select the connection type.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>select the connection type</inlineHelpText>
+    <label>OE Connection Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Video Connection</fullName>
+                <default>true</default>
+                <label>Video Connection</label>
+            </value>
+            <value>
+                <fullName>Audio (phone) line</fullName>
+                <default>false</default>
+                <label>Audio (phone) line</label>
+            </value>
+            <value>
+                <fullName>Webinar</fullName>
+                <default>false</default>
+                <label>Webinar</label>
+            </value>
+            <value>
+                <fullName>OE Live LiveStream</fullName>
+                <default>false</default>
+                <label>OE Live LiveStream</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

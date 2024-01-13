@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Number_of_Comprehensive_Conferences__c</fullName>
+    <description>Comprehensive Conference Streaming Package</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Comprehensive Conference Streaming Package</inlineHelpText>
+    <label>Number of Comprehensive Conferences</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

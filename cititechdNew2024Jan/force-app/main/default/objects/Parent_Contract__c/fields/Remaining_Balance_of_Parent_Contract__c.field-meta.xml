@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Remaining_Balance_of_Parent_Contract__c</fullName>
+    <externalId>false</externalId>
+    <formula>Parent_Contract_Amount__c -  Total_Amount_Billed_to_Child_Contracts__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Contract amount subtracted by the amount billed against the child contracts.</inlineHelpText>
+    <label>Remaining Balance of Parent Contract</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

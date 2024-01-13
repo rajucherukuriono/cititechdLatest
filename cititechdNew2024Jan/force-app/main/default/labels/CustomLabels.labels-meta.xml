@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>AMER_Region</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AMER Region ID</shortDescription>
+        <value>00G1L000005yFBFUA2</value>
+    </labels>
+    <labels>
+        <fullName>APAC_Region</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>APAC Region ID</shortDescription>
+        <value>00G1L000005yFBAUA2</value>
+    </labels>
+    <labels>
+        <fullName>EMEA_Region</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>EMEA Region ID</shortDescription>
+        <value>00G1L00000685x3UAA</value>
+    </labels>
+</CustomLabels>

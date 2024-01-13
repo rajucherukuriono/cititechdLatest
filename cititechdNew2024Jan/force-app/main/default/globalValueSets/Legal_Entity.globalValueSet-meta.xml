@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>OpenExchange</fullName>
+        <default>true</default>
+        <label>OpenExchange</label>
+    </customValue>
+    <customValue>
+        <fullName>OpenExchange HK</fullName>
+        <default>false</default>
+        <label>OpenExchange HK</label>
+    </customValue>
+    <customValue>
+        <fullName>OpenExchange Korea</fullName>
+        <default>false</default>
+        <label>OpenExchange Korea</label>
+    </customValue>
+    <customValue>
+        <fullName>OpenExchange Inc, Limited</fullName>
+        <default>false</default>
+        <label>OpenExchange Inc, Limited</label>
+    </customValue>
+    <customValue>
+        <fullName>Veracast</fullName>
+        <default>false</default>
+        <label>Veracast</label>
+    </customValue>
+    <customValue>
+        <fullName>N195</fullName>
+        <default>false</default>
+        <label>N195</label>
+    </customValue>
+    <description>Partner or Agency related to OE.</description>
+    <masterLabel>Legal Entity</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

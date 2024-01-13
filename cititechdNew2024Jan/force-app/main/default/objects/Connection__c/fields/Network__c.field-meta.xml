@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Network__c</fullName>
+    <externalId>false</externalId>
+    <label>Network</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Connection_Type__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Public IP/Corporate LAN</fullName>
+                <default>false</default>
+                <label>Public IP/Corporate LAN</label>
+            </value>
+            <value>
+                <fullName>Public IP/Consumer LAN</fullName>
+                <default>false</default>
+                <label>Public IP/Consumer LAN</label>
+            </value>
+            <value>
+                <fullName>Neighbor Zone w/ Customer VCS</fullName>
+                <default>false</default>
+                <label>Neighbor Zone w/ Customer VCS</label>
+            </value>
+            <value>
+                <fullName>VPN Connection</fullName>
+                <default>false</default>
+                <label>VPN Connection</label>
+            </value>
+            <value>
+                <fullName>Other (ISDN, etc)</fullName>
+                <default>false</default>
+                <label>Other (ISDN, etc)</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Std Based H.323/SIP</controllingFieldValue>
+            <controllingFieldValue>Vidyo</controllingFieldValue>
+            <valueName>Public IP/Corporate LAN</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Std Based H.323/SIP</controllingFieldValue>
+            <controllingFieldValue>Vidyo</controllingFieldValue>
+            <valueName>Public IP/Consumer LAN</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Std Based H.323/SIP</controllingFieldValue>
+            <valueName>Neighbor Zone w/ Customer VCS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Std Based H.323/SIP</controllingFieldValue>
+            <valueName>VPN Connection</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Std Based H.323/SIP</controllingFieldValue>
+            <controllingFieldValue>Vidyo</controllingFieldValue>
+            <valueName>Other (ISDN, etc)</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

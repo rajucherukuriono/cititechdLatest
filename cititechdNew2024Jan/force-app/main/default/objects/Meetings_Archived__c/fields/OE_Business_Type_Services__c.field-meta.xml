@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OE_Business_Type_Services__c</fullName>
+    <description>Meeting Type for the Service delivery teams usage</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Meeting Type for the Service delivery teams usage note if Livestream is part of a OE connect meeting select LiveStream as Meeting type. If Webinar, select OE Connect</inlineHelpText>
+    <label>OE Business Type (Services)</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>OE Connect</fullName>
+                <default>false</default>
+                <label>OE Connect</label>
+            </value>
+            <value>
+                <fullName>Live Stream</fullName>
+                <default>false</default>
+                <label>Live Stream</label>
+            </value>
+            <value>
+                <fullName>Virtual Conference</fullName>
+                <default>false</default>
+                <label>Virtual Conference</label>
+            </value>
+            <value>
+                <fullName>RSA Engagement</fullName>
+                <default>false</default>
+                <label>RSA Engagement</label>
+            </value>
+            <value>
+                <fullName>FO</fullName>
+                <default>false</default>
+                <label>FO</label>
+            </value>
+            <value>
+                <fullName>IPO</fullName>
+                <default>false</default>
+                <label>IPO</label>
+            </value>
+            <value>
+                <fullName>MUNI</fullName>
+                <default>false</default>
+                <label>MUNI</label>
+            </value>
+            <value>
+                <fullName>1 on 1</fullName>
+                <default>false</default>
+                <label>1 on 1</label>
+            </value>
+            <value>
+                <fullName>Group</fullName>
+                <default>false</default>
+                <label>Group</label>
+            </value>
+            <value>
+                <fullName>Conference</fullName>
+                <default>false</default>
+                <label>Conference</label>
+            </value>
+            <value>
+                <fullName>Industry Expert</fullName>
+                <default>false</default>
+                <label>Industry Expert</label>
+            </value>
+            <value>
+                <fullName>Deal Group</fullName>
+                <default>false</default>
+                <label>Deal Group</label>
+            </value>
+            <value>
+                <fullName>Analyst Marketing</fullName>
+                <default>false</default>
+                <label>Analyst Marketing</label>
+            </value>
+            <value>
+                <fullName>Internal</fullName>
+                <default>false</default>
+                <label>Internal</label>
+            </value>
+            <value>
+                <fullName>Deal 1-on-1</fullName>
+                <default>false</default>
+                <label>Deal 1-on-1</label>
+            </value>
+            <value>
+                <fullName>I-Banking (investment banking)</fullName>
+                <default>false</default>
+                <label>I-Banking (investment banking)</label>
+            </value>
+            <value>
+                <fullName>Interview</fullName>
+                <default>false</default>
+                <label>Interview</label>
+            </value>
+            <value>
+                <fullName>Bus Dev</fullName>
+                <default>false</default>
+                <label>Bus Dev</label>
+            </value>
+            <value>
+                <fullName>Vendor</fullName>
+                <default>false</default>
+                <label>Vendor</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

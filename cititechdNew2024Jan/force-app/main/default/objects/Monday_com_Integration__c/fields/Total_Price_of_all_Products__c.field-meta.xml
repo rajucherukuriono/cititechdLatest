@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Price_of_all_Products__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Price of all products associated to this Order. Calculating all the Monday.com Products</inlineHelpText>
+    <label>Total Price of all Products</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>true</trackHistory>
+    <trackTrending>true</trackTrending>
+    <type>Currency</type>
+</CustomField>

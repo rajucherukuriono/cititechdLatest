@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>Remaining_Balance_of_Parent_Contract__c</columns>
+    <columns>Total_Amount_Billed_to_Child_Contracts__c</columns>
+    <columns>Total_Amount_Queued_to_Child_Contracts__c</columns>
+    <columns>Total_Orders_Related_to_Child_Contracts__c</columns>
+    <columns>Total_Related_Child_Contracts__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>All Parent Contracts</label>
+</ListView>

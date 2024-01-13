@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Number_of_Low_Touch_Meetings_Roll_Ups__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Roll Up field that works off the sub product family value</inlineHelpText>
+    <label>Number of Low-Touch Meetings</label>
+    <summarizedField>Monday_com_Products__c.Quantity__c</summarizedField>
+    <summaryFilterItems>
+        <field>Monday_com_Products__c.Sub_Product_Family__c</field>
+        <operation>equals</operation>
+        <value>Low-Touch</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Monday_com_Products__c.Monday_com_Integration__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

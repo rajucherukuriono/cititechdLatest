@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Endpoint_Manafactur_s__c</fullName>
+    <externalId>false</externalId>
+    <label>Endpoint Manufacturer(s)</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <controllingField>Connection_Type__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>CIsco/Tandberg</fullName>
+                <default>false</default>
+                <label>CIsco/Tandberg</label>
+            </value>
+            <value>
+                <fullName>Cisco Telepresence</fullName>
+                <default>false</default>
+                <label>Cisco Telepresence</label>
+            </value>
+            <value>
+                <fullName>LIfesize</fullName>
+                <default>false</default>
+                <label>LIfesize</label>
+            </value>
+            <value>
+                <fullName>Lync</fullName>
+                <default>false</default>
+                <label>Lync</label>
+            </value>
+            <value>
+                <fullName>Polycom</fullName>
+                <default>false</default>
+                <label>Polycom</label>
+            </value>
+            <value>
+                <fullName>Radvision</fullName>
+                <default>false</default>
+                <label>Radvision</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Std Based H.323/SIP</controllingFieldValue>
+            <valueName>CIsco/Tandberg</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Std Based H.323/SIP</controllingFieldValue>
+            <valueName>Cisco Telepresence</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Std Based H.323/SIP</controllingFieldValue>
+            <valueName>LIfesize</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Std Based H.323/SIP</controllingFieldValue>
+            <valueName>Lync</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Std Based H.323/SIP</controllingFieldValue>
+            <valueName>Polycom</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Std Based H.323/SIP</controllingFieldValue>
+            <valueName>Radvision</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Std Based H.323/SIP</controllingFieldValue>
+            <valueName>Other</valueName>
+        </valueSettings>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

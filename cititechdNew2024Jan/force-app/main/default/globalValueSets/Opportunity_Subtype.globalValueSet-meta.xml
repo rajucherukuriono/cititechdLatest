@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Acquisition</fullName>
+        <default>false</default>
+        <label>Acquisition</label>
+    </customValue>
+    <customValue>
+        <fullName>Expansion</fullName>
+        <default>false</default>
+        <label>Expansion</label>
+    </customValue>
+    <customValue>
+        <fullName>Growth</fullName>
+        <default>false</default>
+        <label>Growth</label>
+    </customValue>
+    <customValue>
+        <fullName>Growth - Add On</fullName>
+        <default>false</default>
+        <label>Growth - Add On</label>
+    </customValue>
+    <customValue>
+        <fullName>Retention</fullName>
+        <default>false</default>
+        <label>Retention</label>
+    </customValue>
+    <customValue>
+        <fullName>Win-Back</fullName>
+        <default>false</default>
+        <label>Win-Back</label>
+    </customValue>
+    <customValue>
+        <fullName>Repeat</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Repeat</label>
+    </customValue>
+    <masterLabel>Opportunity Subtype</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

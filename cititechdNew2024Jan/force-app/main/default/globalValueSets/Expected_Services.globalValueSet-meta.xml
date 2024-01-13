@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Buy Side</fullName>
+        <default>false</default>
+        <label>Buy Side</label>
+    </customValue>
+    <customValue>
+        <fullName>Capital Markets</fullName>
+        <default>false</default>
+        <label>Capital Markets</label>
+    </customValue>
+    <customValue>
+        <fullName>Corporate Finance</fullName>
+        <default>false</default>
+        <label>Corporate Finance</label>
+    </customValue>
+    <customValue>
+        <fullName>Corporate Services</fullName>
+        <default>false</default>
+        <label>Corporate Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Corporate Streamlinks</fullName>
+        <default>false</default>
+        <label>Corporate Streamlinks</label>
+    </customValue>
+    <customValue>
+        <fullName>DCM</fullName>
+        <default>false</default>
+        <label>DCM</label>
+    </customValue>
+    <customValue>
+        <fullName>ECM</fullName>
+        <default>false</default>
+        <label>ECM</label>
+    </customValue>
+    <customValue>
+        <fullName>Hybrid</fullName>
+        <default>false</default>
+        <label>Hybrid</label>
+    </customValue>
+    <customValue>
+        <fullName>Investor Days/Earning Calls</fullName>
+        <default>false</default>
+        <label>Investor Days/Earning Calls</label>
+    </customValue>
+    <customValue>
+        <fullName>Knovio</fullName>
+        <default>false</default>
+        <label>Knovio</label>
+    </customValue>
+    <customValue>
+        <fullName>OE Conference</fullName>
+        <default>false</default>
+        <label>OE Conference</label>
+    </customValue>
+    <customValue>
+        <fullName>OE Connect</fullName>
+        <default>false</default>
+        <label>OE Connect</label>
+    </customValue>
+    <customValue>
+        <fullName>OE Live</fullName>
+        <default>false</default>
+        <label>OE Live</label>
+    </customValue>
+    <customValue>
+        <fullName>OETV</fullName>
+        <default>false</default>
+        <label>OETV</label>
+    </customValue>
+    <customValue>
+        <fullName>OE Webinars</fullName>
+        <default>false</default>
+        <label>OE Webinars</label>
+    </customValue>
+    <customValue>
+        <fullName>Passport</fullName>
+        <default>false</default>
+        <label>Passport</label>
+    </customValue>
+    <customValue>
+        <fullName>Sell Side</fullName>
+        <default>false</default>
+        <label>Sell Side</label>
+    </customValue>
+    <customValue>
+        <fullName>Townhall/Corporate Communications</fullName>
+        <default>false</default>
+        <label>Townhall/Corporate Communications</label>
+    </customValue>
+    <customValue>
+        <fullName>OE Stream</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>OE Stream</label>
+    </customValue>
+    <customValue>
+        <fullName>Showcase</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Showcase</label>
+    </customValue>
+    <masterLabel>Expected Services</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

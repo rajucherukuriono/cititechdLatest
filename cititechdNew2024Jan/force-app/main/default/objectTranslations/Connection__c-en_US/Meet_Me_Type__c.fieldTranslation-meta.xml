@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label></label>
+    <name>Meet_Me_Type__c</name>
+    <picklistValues>
+        <masterLabel>Customer Bridge</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OE Bridge</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Service Provider Bridge</masterLabel>
+        <translation></translation>
+    </picklistValues>
+</CustomFieldTranslation>

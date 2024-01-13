@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Alert_New_owner_if_assigned</fullName>
+        <description>Alert New meeting/case owner if  reassigned</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>request@openexc.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>OE_Templates/Assgined_a_new_meeting</template>
+    </alerts>
+    <alerts>
+        <fullName>Cancelled_meeting_notify_OE_Businesslead</fullName>
+        <description>Notify OE Business Lead if Meeting is Cancelled</description>
+        <protected>false</protected>
+        <recipients>
+            <field>OE_Business_Lead__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderAddress>request@openexc.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>OE_Templates/Meeting_Cancelled_to_OE_Business_Lead</template>
+    </alerts>
+    <alerts>
+        <fullName>Email_that_Meeting_Starts_in_15_Minutes_and</fullName>
+        <ccEmails>s6f1c7a5w0z2z5z8@openexc.slack.com</ccEmails>
+        <ccEmails>vcmeeting@openexc.com</ccEmails>
+        <description>Email that Meeting Starts in 15 Minutes and Conference build status has not been state</description>
+        <protected>false</protected>
+        <senderAddress>support@openexc.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>OE_Templates/Meeting_starts_in_15_minues</template>
+    </alerts>
+    <alerts>
+        <fullName>Email_to_Case_Send_email_confirming_meeting_request_email</fullName>
+        <description>Email to Case:  Send email confirming meeting request email</description>
+        <protected>false</protected>
+        <recipients>
+            <field>SuppliedEmail</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>request@openexc.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Email_to_Case_Templates/OE_Email_to_Case_Email_confirmation_to_client</template>
+    </alerts>
+    <alerts>
+        <fullName>Meeting_Rescheduled_to_Businesslead</fullName>
+        <description>Notify OE Business Lead if Meeting status is changed to Meeting Rescheduled</description>
+        <protected>false</protected>
+        <recipients>
+            <field>OE_Business_Lead__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderAddress>request@openexc.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>OE_Templates/Notify_OE_Business_Lead_that_meeting_was_rescheduled</template>
+    </alerts>
+    <alerts>
+        <fullName>Notify</fullName>
+        <description>Notify all  if a New Meeting is created and needs to be assigned</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>sfapi@openexc.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderAddress>request@openexc.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>OE_Templates/New_Meeting_to_be_assigned</template>
+    </alerts>
+    <alerts>
+        <fullName>Notify_Host_Organizer_that_meeting_has_started</fullName>
+        <description>Notify Host/Organizer that meeting has started</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Meeting_Organizer__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <senderAddress>request@openexc.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>OE_Client_Templates/Notify_host_Business_Owner_that_a_meeting_has_started</template>
+    </alerts>
+    <alerts>
+        <fullName>Notify_OE_Business_Lead_if_Meeting_status_is_changed_to_Meeting_Started</fullName>
+        <description>Notify OE Business Lead if Meeting status is changed to Meeting Started</description>
+        <protected>false</protected>
+        <recipients>
+            <field>OE_Business_Lead__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderAddress>request@openexc.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>OE_Templates/Notify_OE_Business_Owner_that_a_meeting_has_started</template>
+    </alerts>
+    <alerts>
+        <fullName>Send_email</fullName>
+        <description>Send email</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>john@openexc.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>sfapi@openexc.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>OE_Templates/Meeting_starts_in_15_minues</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Make_Google_ID_Null</fullName>
+        <field>Google_Meeting_ID__c</field>
+        <name>Make Google ID Null</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Null</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update3_trigger_checkbox</fullName>
+        <field>Trigger_Email_to_Slack__c</field>
+        <literalValue>1</literalValue>
+        <name>Update trigger checkbox</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update4_trigger_checkbox</fullName>
+        <field>Trigger_Email_to_Slack__c</field>
+        <literalValue>1</literalValue>
+        <name>Update4 trigger checkbox</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Email_Trigger_Checkbox</fullName>
+        <description>If Meeting Status is not Conference Build Started and the meeting starts in 15 minutes, trigger email that is sent to Slack channel.</description>
+        <field>Trigger_Email_to_Slack__c</field>
+        <literalValue>1</literalValue>
+        <name>Update Email Trigger Checkbox</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_checkbox</fullName>
+        <field>Trigger_Email_to_Slack__c</field>
+        <literalValue>1</literalValue>
+        <name>Update checkbox</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_trigger_checkbox</fullName>
+        <field>Trigger_Email_to_Slack__c</field>
+        <literalValue>1</literalValue>
+        <name>Update trigger checkbox</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <outboundMessages>
+        <fullName>Outbound_message_for_Workato_Goole</fullName>
+        <apiVersion>38.0</apiVersion>
+        <description>Outbound message is created so that meetings (cases) can be created/edited as google events in REALTIME</description>
+        <endpointUrl>https://www.workato.com/webhooks/notify/salesforce?sobject=Case&amp;org_id=00D7i000000FgmM</endpointUrl>
+        <fields>Id</fields>
+        <includeSessionId>false</includeSessionId>
+        <integrationUser>john@openexc.com</integrationUser>
+        <name>Outbound message for Workato/Goole</name>
+        <protected>false</protected>
+        <useDeadLetterQueue>false</useDeadLetterQueue>
+    </outboundMessages>
+    <outboundMessages>
+        <fullName>UPDATE_Workato_Meeting_Outbound_Message</fullName>
+        <apiVersion>38.0</apiVersion>
+        <description>Update the google event realtime message to workato</description>
+        <endpointUrl>https://www.workato.com/webhooks/notify/salesforce?sobject=Case&amp;org_id=00D7i000000FgmM</endpointUrl>
+        <fields>Google_Meeting_ID__c</fields>
+        <fields>Id</fields>
+        <includeSessionId>false</includeSessionId>
+        <integrationUser>john@openexc.com</integrationUser>
+        <name>UPDATE Workato Meeting Outbound Message</name>
+        <protected>false</protected>
+        <useDeadLetterQueue>false</useDeadLetterQueue>
+    </outboundMessages>
+    <outboundMessages>
+        <fullName>Workato_Meeting_Outbound_Message</fullName>
+        <apiVersion>38.0</apiVersion>
+        <description>Create workato outbound message for realtime event creation</description>
+        <endpointUrl>https://www.workato.com/webhooks/notify/salesforce?sobject=Case&amp;org_id=00D7i000000FgmM</endpointUrl>
+        <fields>Id</fields>
+        <includeSessionId>false</includeSessionId>
+        <integrationUser>john@openexc.com</integrationUser>
+        <name>Workato Meeting Outbound Message</name>
+        <protected>false</protected>
+        <useDeadLetterQueue>false</useDeadLetterQueue>
+    </outboundMessages>
+    <rules>
+        <fullName>Create Google Event REALTIME</fullName>
+        <actions>
+            <name>Workato_Meeting_Outbound_Message</name>
+            <type>OutboundMessage</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Case.Create_Google_Event__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>New Meeting to be assigned</fullName>
+        <actions>
+            <name>Notify</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Case.Status</field>
+            <operation>equals</operation>
+            <value>Unassigned</value>
+        </criteriaItems>
+        <description>There is a new meeting created and it needs to be assigned.</description>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Update Google Event REALTIME</fullName>
+        <actions>
+            <name>UPDATE_Workato_Meeting_Outbound_Message</name>
+            <type>OutboundMessage</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Case.Create_Google_Event__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Google_Meeting_ID__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+</Workflow>

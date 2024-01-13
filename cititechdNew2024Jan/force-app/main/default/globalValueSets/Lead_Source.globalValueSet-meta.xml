@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Cold Call</fullName>
+        <default>false</default>
+        <label>Cold Call</label>
+    </customValue>
+    <customValue>
+        <fullName>Email</fullName>
+        <default>false</default>
+        <label>Email</label>
+    </customValue>
+    <customValue>
+        <fullName>Facebook</fullName>
+        <default>false</default>
+        <label>Facebook</label>
+    </customValue>
+    <customValue>
+        <fullName>FactSet</fullName>
+        <default>false</default>
+        <label>FactSet</label>
+    </customValue>
+    <customValue>
+        <fullName>Google</fullName>
+        <default>false</default>
+        <label>Google</label>
+    </customValue>
+    <customValue>
+        <fullName>Knovio</fullName>
+        <default>false</default>
+        <label>Knovio</label>
+    </customValue>
+    <customValue>
+        <fullName>LinkedIn</fullName>
+        <default>false</default>
+        <label>LinkedIn</label>
+    </customValue>
+    <customValue>
+        <fullName>Networking Event</fullName>
+        <default>false</default>
+        <label>Networking Event</label>
+    </customValue>
+    <customValue>
+        <fullName>NIRI Annual Conference</fullName>
+        <default>false</default>
+        <label>NIRI Annual Conference</label>
+    </customValue>
+    <customValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <customValue>
+        <fullName>Partner</fullName>
+        <default>false</default>
+        <label>Partner</label>
+    </customValue>
+    <customValue>
+        <fullName>Referral</fullName>
+        <default>false</default>
+        <label>Referral</label>
+    </customValue>
+    <customValue>
+        <fullName>Repeat/Renew</fullName>
+        <default>false</default>
+        <label>Repeat/Renew</label>
+    </customValue>
+    <customValue>
+        <fullName>Streamlink</fullName>
+        <default>false</default>
+        <label>Streamlink</label>
+    </customValue>
+    <customValue>
+        <fullName>Trade Show</fullName>
+        <default>false</default>
+        <label>Trade Show</label>
+    </customValue>
+    <customValue>
+        <fullName>Website</fullName>
+        <default>false</default>
+        <label>Website</label>
+    </customValue>
+    <customValue>
+        <fullName>Zoominfo</fullName>
+        <default>false</default>
+        <label>Zoominfo</label>
+    </customValue>
+    <customValue>
+        <fullName>OpenExchange</fullName>
+        <default>false</default>
+        <label>OpenExchange</label>
+    </customValue>
+    <customValue>
+        <fullName>OE Conference</fullName>
+        <default>false</default>
+        <label>OE Conference</label>
+    </customValue>
+    <customValue>
+        <fullName>Veracast</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Veracast</label>
+    </customValue>
+    <customValue>
+        <fullName>Sell Side</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Sell Side</label>
+    </customValue>
+    <customValue>
+        <fullName>N195</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>N195</label>
+    </customValue>
+    <customValue>
+        <fullName>drip</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>drip</label>
+    </customValue>
+    <customValue>
+        <fullName>IHS Referral</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>IHS Referral</label>
+    </customValue>
+    <customValue>
+        <fullName>Buy Side</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Buy Side</label>
+    </customValue>
+    <customValue>
+        <fullName>Advertisement</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Advertisement</label>
+    </customValue>
+    <customValue>
+        <fullName>Capital Markets Central List</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Capital Markets Central List</label>
+    </customValue>
+    <customValue>
+        <fullName>S&amp;P Global / OE Webinar</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>S&amp;P Global / OE Webinar</label>
+    </customValue>
+    <customValue>
+        <fullName>NIRI Conf. Reg. List</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>NIRI Conf. Reg. List</label>
+    </customValue>
+    <customValue>
+        <fullName>Word of mouth</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Word of mouth</label>
+    </customValue>
+    <customValue>
+        <fullName>Corporate</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Corporate</label>
+    </customValue>
+    <description>Global picklist for Lead Source. Make sure to update the &quot;LeadSource&quot; field as well</description>
+    <masterLabel>Lead Source</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

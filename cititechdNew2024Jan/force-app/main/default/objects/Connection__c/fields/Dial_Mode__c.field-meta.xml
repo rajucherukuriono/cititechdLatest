@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Dial_Mode__c</fullName>
+    <externalId>false</externalId>
+    <label>Dial Mode</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Connection_Type__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>OE Dials Out</fullName>
+                <default>true</default>
+                <label>OE Dials Out</label>
+            </value>
+            <value>
+                <fullName>OE Provides MeetMe Dial In</fullName>
+                <default>false</default>
+                <label>OE Provides MeetMe Dial In</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Std Based H.323/SIP</controllingFieldValue>
+            <valueName>OE Dials Out</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Std Based H.323/SIP</controllingFieldValue>
+            <valueName>OE Provides MeetMe Dial In</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

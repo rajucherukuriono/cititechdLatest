@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Department__c</fullName>
+    <externalId>false</externalId>
+    <label>Department</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Asset Management</fullName>
+                <default>false</default>
+                <label>Asset Management</label>
+            </value>
+            <value>
+                <fullName>Banking</fullName>
+                <default>false</default>
+                <label>Banking</label>
+            </value>
+            <value>
+                <fullName>Corporate Access</fullName>
+                <default>false</default>
+                <label>Corporate Access</label>
+            </value>
+            <value>
+                <fullName>Corporate Services</fullName>
+                <default>false</default>
+                <label>Corporate Services</label>
+            </value>
+            <value>
+                <fullName>Event Marketing</fullName>
+                <default>false</default>
+                <label>Event Marketing</label>
+            </value>
+            <value>
+                <fullName>Foundation/Charitable Work</fullName>
+                <default>false</default>
+                <label>Foundation/Charitable Work</label>
+            </value>
+            <value>
+                <fullName>Global Banking</fullName>
+                <default>false</default>
+                <label>Global Banking</label>
+            </value>
+            <value>
+                <fullName>Global Markets</fullName>
+                <default>false</default>
+                <label>Global Markets</label>
+            </value>
+            <value>
+                <fullName>Global Research</fullName>
+                <default>false</default>
+                <label>Global Research</label>
+            </value>
+            <value>
+                <fullName>Investor Relations</fullName>
+                <default>false</default>
+                <label>Investor Relations</label>
+            </value>
+            <value>
+                <fullName>Issuer Services</fullName>
+                <default>false</default>
+                <label>Issuer Services</label>
+            </value>
+            <value>
+                <fullName>OETV</fullName>
+                <default>false</default>
+                <label>OETV</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Research</fullName>
+                <default>false</default>
+                <label>Research</label>
+            </value>
+            <value>
+                <fullName>Marketing</fullName>
+                <default>false</default>
+                <label>Marketing</label>
+            </value>
+            <value>
+                <fullName>Wealth Management</fullName>
+                <default>false</default>
+                <label>Wealth Management</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>Unsorted Leads</name>
+    <queueMembers>
+        <publicGroups>
+            <publicGroup>Sales_Marketing</publicGroup>
+        </publicGroups>
+        <roleAndSubordinates>
+            <roleAndSubordinate>Sales_Managers</roleAndSubordinate>
+            <roleAndSubordinate>Senior_Management</roleAndSubordinate>
+        </roleAndSubordinates>
+        <roles>
+            <role>Corporate_Sales_IR</role>
+            <role>Corporate_Sales_Non_IR</role>
+            <role>Sales_Managers</role>
+        </roles>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Lead</sobjectType>
+    </queueSobject>
+</Queue>

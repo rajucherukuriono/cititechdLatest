@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Firewall__c</fullName>
+    <externalId>false</externalId>
+    <label>Firewall</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Connection_Type__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>UDP Ports Open</fullName>
+                <default>false</default>
+                <label>UDP Ports Open</label>
+            </value>
+            <value>
+                <fullName>Using VidyoProxy</fullName>
+                <default>false</default>
+                <label>Using VidyoProxy</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Vidyo</controllingFieldValue>
+            <valueName>UDP Ports Open</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Vidyo</controllingFieldValue>
+            <valueName>Using VidyoProxy</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

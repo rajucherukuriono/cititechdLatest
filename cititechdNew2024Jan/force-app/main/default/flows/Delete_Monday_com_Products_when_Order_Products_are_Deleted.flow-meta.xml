@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <interviewLabel>Delete Monday.com Products when Order Products are Deleted {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Delete Monday.com Products when Order Products are Deleted</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordDeletes>
+        <name>Delete_Monday_com_Products</name>
+        <label>Delete Monday.com Products</label>
+        <locationX>890</locationX>
+        <locationY>124</locationY>
+        <inputReference>Find_Monday_com_Products</inputReference>
+    </recordDeletes>
+    <recordLookups>
+        <name>Find_Monday_com_Products</name>
+        <label>Find Monday.com Products</label>
+        <locationX>578</locationX>
+        <locationY>131</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Delete_Monday_com_Products</targetReference>
+        </connector>
+        <filters>
+            <field>Order_Product__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </filters>
+        <object>Monday_com_Products__c</object>
+    </recordLookups>
+    <startElementReference>Find_Monday_com_Products</startElementReference>
+    <status>Active</status>
+</Flow>

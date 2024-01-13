@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Create_Meeting_as_an_Event__c</fullName>
+    <defaultValue>true</defaultValue>
+    <description>This field will be used in Process Buidler to automatically create a meeting in Events once checked.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Check this box if the meeting date and time is confirmed and you are ready to add this event automatically to the Salesforce Calendar.</inlineHelpText>
+    <label>Create Meeting as an Event?</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

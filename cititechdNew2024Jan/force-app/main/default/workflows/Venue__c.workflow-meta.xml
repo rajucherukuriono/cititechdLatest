@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>New_Venue_Created_Alert</fullName>
+        <description>New Venue Created Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <recipients>
+            <recipient>alison.kanani@openexc.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>john.haiduk@openexc.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>kevin.stemple@openexc.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>michael.jay@openexc.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>michael.zakrzewski@openexc.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>All_Email_Templates/New_Venue_Created</template>
+    </alerts>
+</Workflow>

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Alan Gilmore</fullName>
+        <default>false</default>
+        <label>Alan Gilmore</label>
+    </customValue>
+    <customValue>
+        <fullName>Ariel Lay</fullName>
+        <default>false</default>
+        <label>Ariel Lay</label>
+    </customValue>
+    <customValue>
+        <fullName>Carlos Valle</fullName>
+        <default>false</default>
+        <label>Carlos Valle</label>
+    </customValue>
+    <customValue>
+        <fullName>Cassandra Furco</fullName>
+        <default>false</default>
+        <label>Cassandra Furco</label>
+    </customValue>
+    <customValue>
+        <fullName>Charles Scott</fullName>
+        <default>false</default>
+        <label>Charles Scott</label>
+    </customValue>
+    <customValue>
+        <fullName>Christopher Lamp</fullName>
+        <default>false</default>
+        <label>Christopher Lamp</label>
+    </customValue>
+    <customValue>
+        <fullName>Chuck Scott</fullName>
+        <default>false</default>
+        <label>Chuck Scott</label>
+    </customValue>
+    <customValue>
+        <fullName>Dana Young</fullName>
+        <default>false</default>
+        <label>Dana Young</label>
+    </customValue>
+    <customValue>
+        <fullName>David Ladson</fullName>
+        <default>false</default>
+        <label>David Ladson</label>
+    </customValue>
+    <customValue>
+        <fullName>David Stivers</fullName>
+        <default>false</default>
+        <label>David Stivers</label>
+    </customValue>
+    <customValue>
+        <fullName>Donny Monteiro</fullName>
+        <default>false</default>
+        <label>Donny Monteiro</label>
+    </customValue>
+    <customValue>
+        <fullName>Edgar Vasquez</fullName>
+        <default>false</default>
+        <label>Edgar Vasquez</label>
+    </customValue>
+    <customValue>
+        <fullName>Eric Quan</fullName>
+        <default>false</default>
+        <label>Eric Quan</label>
+    </customValue>
+    <customValue>
+        <fullName>Jay Dodds</fullName>
+        <default>false</default>
+        <label>Jay Dodds</label>
+    </customValue>
+    <customValue>
+        <fullName>Joe Kober</fullName>
+        <default>false</default>
+        <label>Joe Kober</label>
+    </customValue>
+    <customValue>
+        <fullName>John Shur</fullName>
+        <default>false</default>
+        <label>John Shur</label>
+    </customValue>
+    <customValue>
+        <fullName>John Williams</fullName>
+        <default>false</default>
+        <label>John Williams</label>
+    </customValue>
+    <customValue>
+        <fullName>Jonathan Krasnowski</fullName>
+        <default>false</default>
+        <label>Jonathan Krasnowski</label>
+    </customValue>
+    <customValue>
+        <fullName>Joyce Lee</fullName>
+        <default>false</default>
+        <label>Joyce Lee</label>
+    </customValue>
+    <customValue>
+        <fullName>Mark Houston</fullName>
+        <default>false</default>
+        <label>Mark Houston</label>
+    </customValue>
+    <customValue>
+        <fullName>Micah Saylor</fullName>
+        <default>false</default>
+        <label>Micah Saylor</label>
+    </customValue>
+    <customValue>
+        <fullName>Michael Corbett</fullName>
+        <default>false</default>
+        <label>Michael Corbett</label>
+    </customValue>
+    <customValue>
+        <fullName>Michael Hernandez</fullName>
+        <default>false</default>
+        <label>Michael Hernandez</label>
+    </customValue>
+    <customValue>
+        <fullName>Mike Covino</fullName>
+        <default>false</default>
+        <label>Mike Covino</label>
+    </customValue>
+    <customValue>
+        <fullName>Nereyda (Ruby) Castellanos</fullName>
+        <default>false</default>
+        <label>Nereyda (Ruby) Castellanos</label>
+    </customValue>
+    <customValue>
+        <fullName>Paul Frick</fullName>
+        <default>false</default>
+        <label>Paul Frick</label>
+    </customValue>
+    <customValue>
+        <fullName>Randy Tremblay</fullName>
+        <default>false</default>
+        <label>Randy Tremblay</label>
+    </customValue>
+    <customValue>
+        <fullName>Raymond Josephson</fullName>
+        <default>false</default>
+        <label>Raymond Josephson</label>
+    </customValue>
+    <customValue>
+        <fullName>Rick Tremblay</fullName>
+        <default>false</default>
+        <label>Rick Tremblay</label>
+    </customValue>
+    <customValue>
+        <fullName>Robbie Wright</fullName>
+        <default>false</default>
+        <label>Robbie Wright</label>
+    </customValue>
+    <customValue>
+        <fullName>Robert Scaffidi</fullName>
+        <default>false</default>
+        <label>Robert Scaffidi</label>
+    </customValue>
+    <customValue>
+        <fullName>Ruairidh Duguid</fullName>
+        <default>false</default>
+        <label>Ruairidh Duguid</label>
+    </customValue>
+    <customValue>
+        <fullName>Shawn Whitaker</fullName>
+        <default>false</default>
+        <label>Shawn Whitaker</label>
+    </customValue>
+    <customValue>
+        <fullName>Skyler Villarta</fullName>
+        <default>false</default>
+        <label>Skyler Villarta</label>
+    </customValue>
+    <customValue>
+        <fullName>Sophia O&apos;Dell</fullName>
+        <default>false</default>
+        <label>Sophia O&apos;Dell</label>
+    </customValue>
+    <customValue>
+        <fullName>Alejandro Amoretti</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Alejandro Amoretti</label>
+    </customValue>
+    <masterLabel>Technical Directors_Speaker Support</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Meeting_Priority_Rating__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Please select the meeting priority that reflects the sort of meeting this is.</inlineHelpText>
+    <label>Meeting Priority Rating</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>1- High Profile/ High Complexity</fullName>
+                <default>false</default>
+                <label>1- High Profile/ High Complexity</label>
+            </value>
+            <value>
+                <fullName>2- Potential Special Attention Needed</fullName>
+                <default>false</default>
+                <label>2- Potential Special Attention Needed</label>
+            </value>
+            <value>
+                <fullName>3- Normal Expectations</fullName>
+                <default>false</default>
+                <label>3- Normal Expectations</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

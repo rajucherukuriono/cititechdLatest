@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>X14_Days_After_End_Date_No_Ready_to_Bill</name>
+        <label>14 Days After End Date No Ready to Bill</label>
+        <locationX>1106</locationX>
+        <locationY>288</locationY>
+        <actionName>Order.OE_Conference_Order_Not_Marked_as_Ready_to_Bill_Master_Alert</actionName>
+        <actionType>emailAlert</actionType>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>X2_Days_After_End_Date_No_Ready_to_Bill</name>
+        <label>2 Days After End Date No Ready to Bill</label>
+        <locationX>50</locationX>
+        <locationY>288</locationY>
+        <actionName>Order.OE_Conference_Order_Not_Marked_as_Ready_to_Bill_Master_Alert</actionName>
+        <actionType>emailAlert</actionType>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>X4_Days_After_End_Date_No_Ready_to_Bill</name>
+        <label>4 Days After End Date No Ready to Bill</label>
+        <locationX>314</locationX>
+        <locationY>288</locationY>
+        <actionName>Order.OE_Conference_Order_Not_Marked_as_Ready_to_Bill_Master_Alert</actionName>
+        <actionType>emailAlert</actionType>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>X6_Days_After_End_Date_No_Ready_to_Bill</name>
+        <label>6 Days After End Date No Ready to Bill</label>
+        <locationX>578</locationX>
+        <locationY>288</locationY>
+        <actionName>Order.OE_Conference_Order_Not_Marked_as_Ready_to_Bill_Master_Alert</actionName>
+        <actionType>emailAlert</actionType>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>X8_Days_After_End_Date_No_Ready_to_Bill</name>
+        <label>8 Days After End Date No Ready to Bill</label>
+        <locationX>842</locationX>
+        <locationY>288</locationY>
+        <actionName>Order.OE_Conference_Order_Not_Marked_as_Ready_to_Bill_Master_Alert</actionName>
+        <actionType>emailAlert</actionType>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <interviewLabel>OE Conference Order Status In Progress/Delivered/Client Confirmed {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Flow -  OE Conference Order Status In Progress/Delivered/Client Confirmed</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <status>Active</status>
+</Flow>

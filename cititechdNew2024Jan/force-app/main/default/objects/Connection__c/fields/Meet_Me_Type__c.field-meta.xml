@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Meet_Me_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Meet-Me Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Dial_Mode__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>OE Bridge</fullName>
+                <default>false</default>
+                <label>OE Bridge</label>
+            </value>
+            <value>
+                <fullName>Customer Bridge</fullName>
+                <default>false</default>
+                <label>Customer Bridge</label>
+            </value>
+            <value>
+                <fullName>Service Provider Bridge</fullName>
+                <default>false</default>
+                <label>Service Provider Bridge</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>OE Provides MeetMe Dial In</controllingFieldValue>
+            <valueName>OE Bridge</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OE Provides MeetMe Dial In</controllingFieldValue>
+            <valueName>Customer Bridge</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OE Provides MeetMe Dial In</controllingFieldValue>
+            <valueName>Service Provider Bridge</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

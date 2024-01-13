@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>request@openexc.com</name>
+    <queueMembers>
+        <users>
+            <user>benb@openexc.com</user>
+            <user>david@openexc.com</user>
+            <user>emilia@openexc.com</user>
+            <user>joe@openexc.com</user>
+            <user>john@openexc.com</user>
+            <user>justin@openexc.com</user>
+            <user>mark@openexc.com</user>
+            <user>mimi@openexc.com</user>
+            <user>nicole@openexc.com</user>
+            <user>paul@openexc.com</user>
+            <user>sheila@openexc.com</user>
+            <user>sophia@openexc.com</user>
+            <user>theresa.zahoruiko@openexc.com</user>
+            <user>william@openexc.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

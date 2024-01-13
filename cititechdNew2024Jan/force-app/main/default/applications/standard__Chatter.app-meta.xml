@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <defaultLandingTab>standard-home</defaultLandingTab>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <tabs>standard-Chatter</tabs>
+    <tabs>standard-UserProfile</tabs>
+    <tabs>standard-OtherUserProfile</tabs>
+    <tabs>standard-CollaborationGroup</tabs>
+    <tabs>standard-File</tabs>
+    <tabs>Getting_Started</tabs>
+    <tabs>Participants__c</tabs>
+    <tabs>Connection__c</tabs>
+    <tabs>RSA__c</tabs>
+    <tabs>Monday_com_Integration__c</tabs>
+    <tabs>Monday_com_Products__c</tabs>
+    <tabs>Payment__c</tabs>
+    <tabs>Invoice__c</tabs>
+    <tabs>Venue__c</tabs>
+    <tabs>Dhruvsoft__O2O_Logs__c</tabs>
+    <tabs>Meetings_Archived__c</tabs>
+    <tabs>Product_Account_Information__c</tabs>
+    <tabs>Netflix__c</tabs>
+</CustomApplication>

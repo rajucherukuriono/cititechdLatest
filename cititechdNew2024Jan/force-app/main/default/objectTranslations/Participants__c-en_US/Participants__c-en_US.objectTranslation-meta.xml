@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>OE Connection</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>OE Connections</value>
+    </caseValues>
+    <layouts>
+        <layout>Participant Layout</layout>
+        <sections>
+            <label></label>
+            <section>Connection Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>LiveStream Checklist</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Meeting Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Notes</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Participant Information</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Monday.com Integration</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Monday.com Integration</value>
+    </caseValues>
+    <layouts>
+        <layout>Monday.com Integration Layout</layout>
+        <sections>
+            <label></label>
+            <section>Add-On Products (Quantity Scheduled Realtime / Price Scheduled at 3am Daily)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Additional Event Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Billing Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Citi Velocity Veracast Products</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Core Products (Realtime)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Description</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Discounts</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Email Notifications</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Event Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>External Event Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Hybrid Component</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Hybrid Section (All Scheduled Rollups at 2am Daily)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Invoice Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>OETV Products (All Scheduled Rollups at 2am Daily)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Opportunity Section</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Order Disapproval/Cancellation</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Packages (Quantity Scheduled Realtime / Price Scheduled at 3am Daily)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Payment Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Roll Up Formula Fields (Realtime)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Showcase Products (Quantity Scheduled Hourly / Price Scheduled at 4pm Daily)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>System Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Veracast Details</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Original_Business_Line_Lockdown</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Total_Interactive_Mtgs_PerDayAbve_35_JPM</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Total_Interactive_Mtgs_Per_Day_Above_25</name>
+    </validationRules>
+</CustomObjectTranslation>

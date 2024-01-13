@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Send_email_to_Citi_Team</name>
+        <label>Send email to Citi Team</label>
+        <locationX>50</locationX>
+        <locationY>455</locationY>
+        <actionName>Order.Email_alert_for_Citi_order_creation_by_API_Integration_User</actionName>
+        <actionType>emailAlert</actionType>
+        <connector>
+            <targetReference>Update_owner_to_Citi_Queue</targetReference>
+        </connector>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <decisions>
+        <name>When_Citi_Order_is_created_by_API_Integration_User</name>
+        <label>When Citi Order is created by API Integration User</label>
+        <locationX>182</locationX>
+        <locationY>335</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Yes</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>New</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Account.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Citi</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.CreatedBy.Username</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>sfapi@openexc.com</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Send_email_to_Citi_Team</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <description>Updating email from partialbox to production</description>
+    <interviewLabel>Citi Order Creation by API User Email Alert {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Citi Order Creation by API User E-Mail Alert</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Update_owner_to_Citi_Queue</name>
+        <label>Update owner to Citi Queue</label>
+        <locationX>50</locationX>
+        <locationY>575</locationY>
+        <inputAssignments>
+            <field>OwnerId</field>
+            <value>
+                <stringValue>00G8X000006G5Dn</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <startElementReference>When_Citi_Order_is_created_by_API_Integration_User</startElementReference>
+    <status>Active</status>
+</Flow>

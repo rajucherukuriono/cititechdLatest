@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>After start</fullName>
+        <default>false</default>
+        <label>After start</label>
+    </customValue>
+    <customValue>
+        <fullName>Within 2 hours of start</fullName>
+        <default>false</default>
+        <label>Within 2 hours of start</label>
+    </customValue>
+    <customValue>
+        <fullName>&lt; 12 hours</fullName>
+        <default>false</default>
+        <label>&lt; 12 hours</label>
+    </customValue>
+    <customValue>
+        <fullName>&lt; 48 hours</fullName>
+        <default>false</default>
+        <label>&lt; 48 hours</label>
+    </customValue>
+    <customValue>
+        <fullName>&gt; 48 hours</fullName>
+        <default>false</default>
+        <label>&gt; 48 hours</label>
+    </customValue>
+    <masterLabel>Cancellation Notice</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Create_Google_Event__c</fullName>
+    <defaultValue>true</defaultValue>
+    <description>If this is checked off, an event will be created in the google calendar.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>If this is checked off, an event will be created in the google calendar.</inlineHelpText>
+    <label>Create Google Event?</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

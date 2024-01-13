@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AutoResponseRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <autoResponseRule>
+        <fullName>Email to Case is Created</fullName>
+        <active>true</active>
+        <ruleEntry>
+            <formula>ISNEW() &amp;&amp;  (ISPICKVAL(Origin,&quot;request@Openexc.com&quot;))</formula>
+            <notifyCcRecipients>true</notifyCcRecipients>
+            <replyToEmail>request@openexc.com</replyToEmail>
+            <senderEmail>support@openexc.com</senderEmail>
+            <senderName>Open Exchange</senderName>
+            <template>Email_to_Case_Templates/OE_Email_to_Case_Email_confirmation_to_client</template>
+        </ruleEntry>
+    </autoResponseRule>
+</AutoResponseRules>

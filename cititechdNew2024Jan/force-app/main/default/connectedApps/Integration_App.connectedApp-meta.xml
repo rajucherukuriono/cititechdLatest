@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contactEmail>kevin.stemple@openexc.com</contactEmail>
+    <label>Integration App</label>
+    <oauthConfig>
+        <callbackUrl>https://login.salesforce.com/services/oauth2/token</callbackUrl>
+        <consumerKey>3MVG9PE4xB9wtoY_i29RD53K7wSqM6jvlVGyhXSZOj_lSqbcZt_OqKZFAw9XP.d7ejSksK2m5G2URBGnSIlhB</consumerKey>
+        <isAdminApproved>false</isAdminApproved>
+        <scopes>Api</scopes>
+    </oauthConfig>
+</ConnectedApp>

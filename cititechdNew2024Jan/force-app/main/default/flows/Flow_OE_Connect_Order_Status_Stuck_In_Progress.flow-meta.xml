@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>X1_Day_After_End_Date_Not_Delivered</name>
+        <label>1 Day After End Date Not Delivered</label>
+        <locationX>50</locationX>
+        <locationY>288</locationY>
+        <actionName>Order.OE_Connect_Order_Not_Marked_as_Ready_to_Bill_Master_Alert</actionName>
+        <actionType>emailAlert</actionType>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>X2_Days_After_End_Date_Not_Delivered</name>
+        <label>2 Days After End Date Not Delivered</label>
+        <locationX>314</locationX>
+        <locationY>288</locationY>
+        <actionName>Order.OE_Connect_Order_Not_Marked_as_Ready_to_Bill_Master_Alert</actionName>
+        <actionType>emailAlert</actionType>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>X3_Days_After_End_Date_Not_Delivered</name>
+        <label>3 Days After End Date Not Delivered</label>
+        <locationX>578</locationX>
+        <locationY>288</locationY>
+        <actionName>Order.OE_Connect_Order_Not_Marked_as_Ready_to_Bill_Master_Alert</actionName>
+        <actionType>emailAlert</actionType>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>X4_Days_After_End_Date_Not_Delivered</name>
+        <label>4 Days After End Date Not Delivered</label>
+        <locationX>842</locationX>
+        <locationY>288</locationY>
+        <actionName>Order.OE_Connect_Order_Not_Marked_as_Ready_to_Bill_Master_Alert</actionName>
+        <actionType>emailAlert</actionType>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>X7_Days_After_End_Date_Not_Delivered</name>
+        <label>7 Days After End Date Not Delivered</label>
+        <locationX>1106</locationX>
+        <locationY>288</locationY>
+        <actionName>Order.OE_Connect_Order_Not_Marked_as_Ready_to_Bill_Master_Alert</actionName>
+        <actionType>emailAlert</actionType>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <interviewLabel>OE Connect Order Status Stuck In Progress {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Flow- OE Connect Order Status Stuck In Progress</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <status>Active</status>
+</Flow>

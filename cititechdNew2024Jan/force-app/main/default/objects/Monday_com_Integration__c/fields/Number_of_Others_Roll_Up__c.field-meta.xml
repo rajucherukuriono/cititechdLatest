@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Number_of_Others_Roll_Up__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Roll up field that calculates all Other product family stamped products (Other, Discount, etc..)</inlineHelpText>
+    <label>Number of Others</label>
+    <summarizedField>Monday_com_Products__c.Quantity__c</summarizedField>
+    <summaryFilterItems>
+        <field>Monday_com_Products__c.Product_Family__c</field>
+        <operation>equals</operation>
+        <value>Other</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Monday_com_Products__c.Monday_com_Integration__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

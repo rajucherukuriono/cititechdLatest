@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <decisions>
+        <name>Outreach_Engagement_Status_Flipped_to_Bad_Contact_Info</name>
+        <label>Outreach Engagement Status Flipped to &quot;Bad Contact Info&quot;</label>
+        <locationX>182</locationX>
+        <locationY>1127</locationY>
+        <defaultConnector>
+            <targetReference>Streamlink_Contact</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Outreach_Engagement_Status_Flipped</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Outreach_Engagement_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Bad Contact Info</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Outreach_Engagement_Status__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Contact_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Current</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>update_contact_status_to_unknown</targetReference>
+            </connector>
+            <label>Outreach Engagement Status Flipped</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Outreach_Sequence_Status_moved_to_bounced</name>
+        <label>Outreach Sequence Status moved to &quot;bounced&quot;</label>
+        <locationX>182</locationX>
+        <locationY>791</locationY>
+        <defaultConnector>
+            <targetReference>Outreach_Engagement_Status_Flipped_to_Bad_Contact_Info</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Outreach_Sequence_Status</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Outreach_Current_Sequence_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>bounced</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Outreach_Current_Sequence_Status__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Contact_Bounced_Date_Reason</targetReference>
+            </connector>
+            <label>Outreach Sequence Status</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Streamlink_Contact</name>
+        <label>Streamlink Contact?</label>
+        <locationX>182</locationX>
+        <locationY>1463</locationY>
+        <defaultConnector>
+            <targetReference>Update_Original_Lead_Source</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Streamlink_Contact_Created</name>
+            <conditionLogic>(1 OR 2 OR 3) AND 4</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Chargify_Conference__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.LeadSource</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Streamlink</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Original_Lead_Source__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Streamlink</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.CreatedDate</leftValueReference>
+                <operator>GreaterThanOrEqualTo</operator>
+                <rightValue>
+                    <dateTimeValue>2023-01-01T05:00:00.000Z</dateTimeValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Streamlink_Contact_Checkbox_if_Streamlink</targetReference>
+            </connector>
+            <label>Streamlink Contact Created</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Update_Original_Lead_Source</name>
+        <label>Update Original Lead Source</label>
+        <locationX>182</locationX>
+        <locationY>1799</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Update_Org_lead_source</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Original_Lead_Source__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Original_Lead_Source_with_1st_Lead_Source</targetReference>
+            </connector>
+            <label>Update Org lead source</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Zoominfo_Person_has_Moved_On_Set_to_True</name>
+        <label>Zoominfo Person has Moved On -  Set to True</label>
+        <locationX>182</locationX>
+        <locationY>455</locationY>
+        <defaultConnector>
+            <targetReference>Outreach_Sequence_Status_moved_to_bounced</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Yes</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.ZoomInfo_Person_has_Moved__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Yes</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.ZoomInfo_Person_has_Moved__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Contact_Status__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>No Longer Works Here</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Zoominfo_Employment_Status_Incorrect__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Contact_Status</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <description>Streamlink Contact Logic Inserted</description>
+    <formulas>
+        <name>datetimevalueneedsplus1</name>
+        <dataType>DateTime</dataType>
+        <expression>DATETIMEVALUE(TODAY() + 1)</expression>
+    </formulas>
+    <interviewLabel>Contact Flow {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Contact flow account name to contact page</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Update_Account_Name_text_field</name>
+        <label>Update Account Name text field</label>
+        <locationX>182</locationX>
+        <locationY>335</locationY>
+        <connector>
+            <targetReference>Zoominfo_Person_has_Moved_On_Set_to_True</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Account_Name_text_field_for_search__c</field>
+            <value>
+                <elementReference>$Record.Account.Name</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Contact_Bounced_Date_Reason</name>
+        <label>Update Contact Bounced Date/Reason</label>
+        <locationX>50</locationX>
+        <locationY>911</locationY>
+        <connector>
+            <targetReference>Outreach_Engagement_Status_Flipped_to_Bad_Contact_Info</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>EmailBouncedDate</field>
+            <value>
+                <elementReference>datetimevalueneedsplus1</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>EmailBouncedReason</field>
+            <value>
+                <stringValue>Outreach Email Bounced - Please Review</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Contact_Status</name>
+        <label>Update Contact Status</label>
+        <locationX>50</locationX>
+        <locationY>575</locationY>
+        <connector>
+            <targetReference>Outreach_Sequence_Status_moved_to_bounced</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Contact_Status__c</field>
+            <value>
+                <stringValue>No Longer Works Here</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>update_contact_status_to_unknown</name>
+        <label>update contact status to unknown</label>
+        <locationX>50</locationX>
+        <locationY>1247</locationY>
+        <connector>
+            <targetReference>Streamlink_Contact</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Contact_Status__c</field>
+            <value>
+                <stringValue>Unknown</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Original_Lead_Source_with_1st_Lead_Source</name>
+        <label>Update Original Lead Source with 1st Lead Source</label>
+        <locationX>50</locationX>
+        <locationY>1919</locationY>
+        <inputAssignments>
+            <field>Original_Lead_Source__c</field>
+            <value>
+                <elementReference>$Record.LeadSource</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <description>Needed for Outreach integration purposes.</description>
+        <name>Update_Streamlink_Contact_Checkbox_if_Streamlink</name>
+        <label>Update Streamlink Contact Checkbox if Streamlink</label>
+        <locationX>50</locationX>
+        <locationY>1583</locationY>
+        <connector>
+            <targetReference>Update_Original_Lead_Source</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Streamlink_Contact__c</field>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <startElementReference>Update_Account_Name_text_field</startElementReference>
+    <status>Active</status>
+</Flow>

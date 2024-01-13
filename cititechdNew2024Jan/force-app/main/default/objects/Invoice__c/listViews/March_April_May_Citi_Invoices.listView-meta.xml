@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>March_April_May_Citi_Invoices</fullName>
+    <columns>Account__c</columns>
+    <columns>Order__c</columns>
+    <columns>NAME</columns>
+    <columns>Invoice_Number__c</columns>
+    <columns>Invoice_Amount__c</columns>
+    <columns>Invoice_Date__c</columns>
+    <columns>Date_Invoice_Sent__c</columns>
+    <columns>CREATEDBY_USER</columns>
+    <columns>CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Invoice_Date__c</field>
+        <operation>greaterOrEqual</operation>
+        <value>3/1/2021</value>
+    </filters>
+    <filters>
+        <field>Account__c</field>
+        <operation>equals</operation>
+        <value>Citi</value>
+    </filters>
+    <filters>
+        <field>Invoice_Date__c</field>
+        <operation>lessOrEqual</operation>
+        <value>6/1/2021</value>
+    </filters>
+    <label>March April May Citi Invoices</label>
+</ListView>

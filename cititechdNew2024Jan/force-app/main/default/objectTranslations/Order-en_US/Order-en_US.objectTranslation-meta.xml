@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <layouts>
+        <layout>Corporate Knovio Page Layout</layout>
+        <sections>
+            <label></label>
+            <section>Additional Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Billing Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Corporate StreamLinks Page Layout</layout>
+        <sections>
+            <label></label>
+            <section>Billing Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Event Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Streamlink Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>No Contract Order Layout</layout>
+        <sections>
+            <label></label>
+            <section>Billing Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Date/Time Stamps</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Event Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Event Notes</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>External Event Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Hybrid Component</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>OEC / Lasso Integration Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Opportunity Section (Only Populated if Converted)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Order Cancellation</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Payment Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Travel &amp; Expenses/Notes Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Vendors and Pass-Through Costs</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Order Layout</layout>
+        <sections>
+            <label></label>
+            <section>Billing Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Date/Time Stamps</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Event Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Event Notes</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>External Event Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Hybrid Component</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>OEC / Lasso Integration Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Opportunity Section (Only Populated if Converted)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Order Cancellation</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Payment Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Travel &amp; Expense/Notes Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Vendors and Pass-Through Costs</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label></label>
+        <name>Custom_Clone</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Update_PriceBook</name>
+    </quickActions>
+</CustomObjectTranslation>

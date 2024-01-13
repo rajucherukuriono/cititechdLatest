@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Price_of_Streamed_Meetings__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Roll Up field that works off the sub product family value (used to be called Broadcast)</inlineHelpText>
+    <label>Total Price of Streamed Meetings</label>
+    <summarizedField>Monday_com_Products__c.Total_Price__c</summarizedField>
+    <summaryFilterItems>
+        <field>Monday_com_Products__c.Sub_Product_Family__c</field>
+        <operation>equals</operation>
+        <value>Broadcast,Streamed</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Monday_com_Products__c.Monday_com_Integration__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

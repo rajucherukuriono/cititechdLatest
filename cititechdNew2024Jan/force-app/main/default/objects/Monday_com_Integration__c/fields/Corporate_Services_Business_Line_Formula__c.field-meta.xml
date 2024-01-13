@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Corporate_Services_Business_Line_Formula__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(Corporate_Services_Business_Line__c = TRUE, 1,0)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Field to help out temporarily the Monday.com Integration boards for Mike Z and Michael Brown (For some reason monday.com only has &quot;changes to&quot; as an option for a status automation, while values have the &quot;is&quot; option)</inlineHelpText>
+    <label>Corporate Services Business Line Formula</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

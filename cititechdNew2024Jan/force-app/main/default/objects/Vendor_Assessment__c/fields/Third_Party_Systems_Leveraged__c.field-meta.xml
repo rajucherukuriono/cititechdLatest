@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Third_Party_Systems_Leveraged__c</fullName>
+    <externalId>false</externalId>
+    <label>Third Party Systems Leveraged</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>All</fullName>
+                <default>false</default>
+                <label>All</label>
+            </value>
+            <value>
+                <fullName>Amazon Wed Services (AWS)</fullName>
+                <default>false</default>
+                <label>Amazon Wed Services (AWS)</label>
+            </value>
+            <value>
+                <fullName>Office 365</fullName>
+                <default>false</default>
+                <label>Office 365</label>
+            </value>
+            <value>
+                <fullName>Zoom</fullName>
+                <default>false</default>
+                <label>Zoom</label>
+            </value>
+            <value>
+                <fullName>Intent Solutions Group</fullName>
+                <default>false</default>
+                <label>Intent Solutions Group</label>
+            </value>
+            <value>
+                <fullName>Simply</fullName>
+                <default>false</default>
+                <label>Simply</label>
+            </value>
+            <value>
+                <fullName>Wavelabs</fullName>
+                <default>false</default>
+                <label>Wavelabs</label>
+            </value>
+            <value>
+                <fullName>M2 Marcas</fullName>
+                <default>false</default>
+                <label>M2 Marcas</label>
+            </value>
+            <value>
+                <fullName>China Peace Intern.</fullName>
+                <default>false</default>
+                <label>China Peace Intern.</label>
+            </value>
+            <value>
+                <fullName>K2 Partnering Solutions KK</fullName>
+                <default>false</default>
+                <label>K2 Partnering Solutions KK</label>
+            </value>
+            <value>
+                <fullName>Rev</fullName>
+                <default>false</default>
+                <label>Rev</label>
+            </value>
+            <value>
+                <fullName>Sisense</fullName>
+                <default>false</default>
+                <label>Sisense</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

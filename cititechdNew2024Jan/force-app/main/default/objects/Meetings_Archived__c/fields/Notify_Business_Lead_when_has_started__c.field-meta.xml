@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Notify_Business_Lead_when_has_started__c</fullName>
+    <defaultValue>true</defaultValue>
+    <externalId>false</externalId>
+    <inlineHelpText>Check this off if you would like the OE Business Lead to be notified that the meeting has started.</inlineHelpText>
+    <label>Notify Business Lead when has started?</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

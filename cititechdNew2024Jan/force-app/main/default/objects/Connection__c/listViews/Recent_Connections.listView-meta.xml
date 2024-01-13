@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Recent_Connections</fullName>
+    <columns>NAME</columns>
+    <columns>ConnectionName__c</columns>
+    <columns>URI_IP__c</columns>
+    <columns>Dial_Mode__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>Recent Connections</label>
+</ListView>

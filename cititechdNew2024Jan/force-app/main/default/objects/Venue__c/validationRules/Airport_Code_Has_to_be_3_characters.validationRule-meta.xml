@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Airport_Code_Has_to_be_3_characters</fullName>
+    <active>true</active>
+    <description>Airport code has to be 3 characters</description>
+    <errorConditionFormula>LEN(Airport_Code__c) &lt;&gt; 3</errorConditionFormula>
+    <errorMessage>Airport code has to be 3 characters</errorMessage>
+</ValidationRule>

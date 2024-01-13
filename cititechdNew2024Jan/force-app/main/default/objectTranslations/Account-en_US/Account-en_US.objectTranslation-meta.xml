@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <layouts>
+        <layout>Account Layout</layout>
+        <sections>
+            <label></label>
+            <section>Forecast Partnerships</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Legacy Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Marketing Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Related Opportunities Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Related Orders Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Subscription Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>System Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Zoominfo</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Zoominfo/FactSet System Info</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

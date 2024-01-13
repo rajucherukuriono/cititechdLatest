@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SecuritySettings xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <isTLSv12Required xsi:nil="true"/>
+    <isTLSv12RequiredCommunities xsi:nil="true"/>
+    <networkAccess>
+        <ipRanges>
+            <description>Sheila Alexandria</description>
+            <end>98.169.165.104</end>
+            <start>98.169.165.104</start>
+        </ipRanges>
+        <ipRanges>
+            <description>David Mifi</description>
+            <end>97.33.91.127</end>
+            <start>97.33.91.127</start>
+        </ipRanges>
+        <ipRanges>
+            <description>Nicole Home</description>
+            <end>74.105.229.100</end>
+            <start>74.105.229.100</start>
+        </ipRanges>
+        <ipRanges>
+            <description>Nicole Union</description>
+            <end>70.192.76.230</end>
+            <start>70.192.76.230</start>
+        </ipRanges>
+        <ipRanges>
+            <description>Nicole MiFi</description>
+            <end>70.192.68.170</end>
+            <start>70.192.68.170</start>
+        </ipRanges>
+        <ipRanges>
+            <description>Mark Greenwich</description>
+            <end>69.122.139.112</end>
+            <start>69.122.139.112</start>
+        </ipRanges>
+        <ipRanges>
+            <description>Kate Home</description>
+            <end>67.84.38.179</end>
+            <start>67.84.38.179</start>
+        </ipRanges>
+        <ipRanges>
+            <description>David Home</description>
+            <end>66.30.41.27</end>
+            <start>66.30.41.27</start>
+        </ipRanges>
+        <ipRanges>
+            <description>Portsmouth Office</description>
+            <end>64.222.249.34</end>
+            <start>64.222.249.34</start>
+        </ipRanges>
+        <ipRanges>
+            <description>Workato</description>
+            <end>54.235.219.56</end>
+            <start>54.235.219.56</start>
+        </ipRanges>
+        <ipRanges>
+            <description>Justin Andover</description>
+            <end>24.147.96.149</end>
+            <start>24.147.96.149</start>
+        </ipRanges>
+        <ipRanges>
+            <description>Sophia Cell</description>
+            <end>14.0.224.64</end>
+            <start>14.0.224.64</start>
+        </ipRanges>
+        <ipRanges>
+            <description>Sophia MiFi</description>
+            <end>14.0.175.145</end>
+            <start>14.0.175.145</start>
+        </ipRanges>
+        <ipRanges>
+            <description>Sophia HK2</description>
+            <end>1.64.99.52</end>
+            <start>1.64.99.52</start>
+        </ipRanges>
+        <ipRanges>
+            <description>Sophia Home MAC</description>
+            <end>1.36.109.138</end>
+            <start>1.36.109.138</start>
+        </ipRanges>
+        <ipRanges>
+            <description>Sophia HK</description>
+            <end>1.36.108.240</end>
+            <start>1.36.108.240</start>
+        </ipRanges>
+        <ipRanges>
+            <description>Sophia Home iPad</description>
+            <end>1.36.108.206</end>
+            <start>1.36.108.206</start>
+        </ipRanges>
+    </networkAccess>
+    <passwordPolicies>
+        <complexity>AlphaNumeric</complexity>
+        <expiration>NinetyDays</expiration>
+        <historyRestriction>3</historyRestriction>
+        <lockoutInterval>ThirtyMinutes</lockoutInterval>
+        <maxLoginAttempts>FiveAttempts</maxLoginAttempts>
+        <minimumPasswordLength>8</minimumPasswordLength>
+        <minimumPasswordLifetime>false</minimumPasswordLifetime>
+        <obscureSecretAnswer>true</obscureSecretAnswer>
+        <questionRestriction>DoesNotContainPassword</questionRestriction>
+    </passwordPolicies>
+    <sessionSettings>
+        <disableTimeoutWarning>false</disableTimeoutWarning>
+        <enableCSPOnEmail>true</enableCSPOnEmail>
+        <enableCSRFOnGet>true</enableCSRFOnGet>
+        <enableCSRFOnPost>true</enableCSRFOnPost>
+        <enableCacheAndAutocomplete>true</enableCacheAndAutocomplete>
+        <enableClickjackNonsetupSFDC>true</enableClickjackNonsetupSFDC>
+        <enableClickjackNonsetupUser>true</enableClickjackNonsetupUser>
+        <enableClickjackNonsetupUserHeaderless>true</enableClickjackNonsetupUserHeaderless>
+        <enableClickjackSetup>true</enableClickjackSetup>
+        <enableContentSniffingProtection>true</enableContentSniffingProtection>
+        <enablePostForSessions>false</enablePostForSessions>
+        <enableSMSIdentity>true</enableSMSIdentity>
+        <enableXssProtection>true</enableXssProtection>
+        <enforceIpRangesEveryRequest>false</enforceIpRangesEveryRequest>
+        <forceLogoutOnSessionTimeout>true</forceLogoutOnSessionTimeout>
+        <forceRelogin>false</forceRelogin>
+        <identityConfirmationOnEmailChange>false</identityConfirmationOnEmailChange>
+        <identityConfirmationOnTwoFactorRegistrationEnabled>true</identityConfirmationOnTwoFactorRegistrationEnabled>
+        <lockSessionsToDomain>true</lockSessionsToDomain>
+        <lockSessionsToIp>false</lockSessionsToIp>
+        <lockerServiceCSP>true</lockerServiceCSP>
+        <redirectionWarning>false</redirectionWarning>
+        <referrerPolicy>true</referrerPolicy>
+        <requireHttpOnly>false</requireHttpOnly>
+        <sessionTimeout>TwoHours</sessionTimeout>
+    </sessionSettings>
+</SecuritySettings>

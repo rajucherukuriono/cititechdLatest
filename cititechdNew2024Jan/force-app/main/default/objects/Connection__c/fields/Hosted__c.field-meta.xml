@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Hosted__c</fullName>
+    <externalId>false</externalId>
+    <label>Hosted</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Connection_Type__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>OE Cloud</fullName>
+                <default>true</default>
+                <label>OE Cloud</label>
+            </value>
+            <value>
+                <fullName>Customer On-prem</fullName>
+                <default>false</default>
+                <label>Customer On-prem</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Vidyo</controllingFieldValue>
+            <valueName>OE Cloud</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Vidyo</controllingFieldValue>
+            <valueName>Customer On-prem</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

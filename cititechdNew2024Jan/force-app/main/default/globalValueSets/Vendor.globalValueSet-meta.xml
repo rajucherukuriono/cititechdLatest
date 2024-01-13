@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>AsiaWorks</fullName>
+        <default>false</default>
+        <label>AsiaWorks</label>
+    </customValue>
+    <customValue>
+        <fullName>Connex</fullName>
+        <default>false</default>
+        <label>Connex</label>
+    </customValue>
+    <customValue>
+        <fullName>Crews Control</fullName>
+        <default>false</default>
+        <label>Crews Control</label>
+    </customValue>
+    <customValue>
+        <fullName>Cut Across</fullName>
+        <default>false</default>
+        <label>Cut Across</label>
+    </customValue>
+    <customValue>
+        <fullName>DigiNovations</fullName>
+        <default>false</default>
+        <label>DigiNovations</label>
+    </customValue>
+    <customValue>
+        <fullName>Encore</fullName>
+        <default>false</default>
+        <label>Encore</label>
+    </customValue>
+    <customValue>
+        <fullName>LMNO Productions</fullName>
+        <default>false</default>
+        <label>LMNO Productions</label>
+    </customValue>
+    <customValue>
+        <fullName>LSEG</fullName>
+        <default>false</default>
+        <label>LSEG</label>
+    </customValue>
+    <customValue>
+        <fullName>Markey&apos;s</fullName>
+        <default>false</default>
+        <label>Markey&apos;s</label>
+    </customValue>
+    <customValue>
+        <fullName>Pugilist Films</fullName>
+        <default>false</default>
+        <label>Pugilist Films</label>
+    </customValue>
+    <customValue>
+        <fullName>SparkLive</fullName>
+        <default>false</default>
+        <label>SparkLive</label>
+    </customValue>
+    <customValue>
+        <fullName>Suono e Immagine Srl</fullName>
+        <default>false</default>
+        <label>Suono e Immagine Srl</label>
+    </customValue>
+    <customValue>
+        <fullName>Teralon Media Ltd.</fullName>
+        <default>false</default>
+        <label>Teralon Media Ltd.</label>
+    </customValue>
+    <customValue>
+        <fullName>3play</fullName>
+        <default>false</default>
+        <label>3play</label>
+    </customValue>
+    <description>Vendors for things like Pass-Through Costs</description>
+    <masterLabel>Vendor</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

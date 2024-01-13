@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>jedminster@saxasolutions.com</email>
+    <name>Unassigned Meetings Queue</name>
+    <queueMembers>
+        <users>
+            <user>david@openexc.com</user>
+            <user>john@openexc.com</user>
+            <user>justin@openexc.com</user>
+            <user>sheila@openexc.com</user>
+            <user>sophia@openexc.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

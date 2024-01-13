@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Call_Speed__c</fullName>
+    <externalId>false</externalId>
+    <label>Call Speed</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Connection_Type__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>HD+ - &gt;1.5M</fullName>
+                <default>false</default>
+                <label>HD+ - &gt;1.5M</label>
+            </value>
+            <value>
+                <fullName>HD - 1.5M</fullName>
+                <default>false</default>
+                <label>HD - 1.5M</label>
+            </value>
+            <value>
+                <fullName>SD - 750K</fullName>
+                <default>false</default>
+                <label>SD - 750K</label>
+            </value>
+            <value>
+                <fullName>CIF- 384K</fullName>
+                <default>false</default>
+                <label>CIF- 384K</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Std Based H.323/SIP</controllingFieldValue>
+            <valueName>HD+ - &gt;1.5M</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Std Based H.323/SIP</controllingFieldValue>
+            <valueName>HD - 1.5M</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Std Based H.323/SIP</controllingFieldValue>
+            <valueName>SD - 750K</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Std Based H.323/SIP</controllingFieldValue>
+            <valueName>CIF- 384K</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Business_Line_Change__c</fullName>
+    <defaultValue>false</defaultValue>
+    <externalId>false</externalId>
+    <inlineHelpText>Checkbox will be marked to true if the business line has changed labels. As well as an email sent trigger</inlineHelpText>
+    <label>Business Line Change</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

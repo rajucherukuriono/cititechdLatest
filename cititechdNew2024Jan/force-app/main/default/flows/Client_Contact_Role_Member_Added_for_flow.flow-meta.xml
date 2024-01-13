@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <interviewLabel>Client Contact Role Member Added {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Client Contact Role Member Added for flow</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Update_Client_Contact_Role_Tagged_is_Added</name>
+        <label>Update Client Contact Role Tagged is Added</label>
+        <locationX>176</locationX>
+        <locationY>335</locationY>
+        <filters>
+            <field>Client_Contact_Roles_Tagged__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Client_Contact_Roles_Tagged__c</field>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record.Opportunity</inputReference>
+    </recordUpdates>
+    <startElementReference>Update_Client_Contact_Role_Tagged_is_Added</startElementReference>
+    <status>Active</status>
+</Flow>

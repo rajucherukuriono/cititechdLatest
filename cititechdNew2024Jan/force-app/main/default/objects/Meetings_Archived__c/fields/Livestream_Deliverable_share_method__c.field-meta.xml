@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Livestream_Deliverable_share_method__c</fullName>
+    <externalId>false</externalId>
+    <label>Livestream Deliverable (share method)</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>NA</fullName>
+                <default>true</default>
+                <label>NA</label>
+            </value>
+            <value>
+                <fullName>KV direct Link</fullName>
+                <default>false</default>
+                <label>KV direct Link</label>
+            </value>
+            <value>
+                <fullName>Showcase Link</fullName>
+                <default>false</default>
+                <label>Showcase Link</label>
+            </value>
+            <value>
+                <fullName>Embed Code</fullName>
+                <default>false</default>
+                <label>Embed Code</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

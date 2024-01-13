@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>OE Contact Sales</fullName>
+        <default>false</default>
+        <label>OE Contact Sales</label>
+    </customValue>
+    <customValue>
+        <fullName>OE Contact Us</fullName>
+        <default>false</default>
+        <label>OE Contact Us</label>
+    </customValue>
+    <customValue>
+        <fullName>OE Corporate IR Page</fullName>
+        <default>false</default>
+        <label>OE Corporate IR Page</label>
+    </customValue>
+    <customValue>
+        <fullName>OE News Signup</fullName>
+        <default>false</default>
+        <label>OE News Signup</label>
+    </customValue>
+    <customValue>
+        <fullName>OE Streamlink Landing Page</fullName>
+        <default>false</default>
+        <label>OE Streamlink Landing Page</label>
+    </customValue>
+    <customValue>
+        <fullName>OE Virtualize Conference Page</fullName>
+        <default>false</default>
+        <label>OE Virtualize Conference Page</label>
+    </customValue>
+    <customValue>
+        <fullName>OE Virtualize IR 2020 Page</fullName>
+        <default>false</default>
+        <label>OE Virtualize IR 2020 Page</label>
+    </customValue>
+    <customValue>
+        <fullName>OE Virtualize IR Page</fullName>
+        <default>false</default>
+        <label>OE Virtualize IR Page</label>
+    </customValue>
+    <customValue>
+        <fullName>OE Webinar Recording Page</fullName>
+        <default>false</default>
+        <label>OE Webinar Recording Page</label>
+    </customValue>
+    <customValue>
+        <fullName>OETV for Event Providers </fullName>
+        <default>false</default>
+        <label>OETV for Event Providers </label>
+    </customValue>
+    <customValue>
+        <fullName>OETV Inquiry</fullName>
+        <default>false</default>
+        <label>OETV Inquiry</label>
+    </customValue>
+    <customValue>
+        <fullName>OETV Inquiry Form</fullName>
+        <default>false</default>
+        <label>OETV Inquiry Form</label>
+    </customValue>
+    <customValue>
+        <fullName>Knovio- Contact</fullName>
+        <default>false</default>
+        <label>Knovio- Contact</label>
+    </customValue>
+    <customValue>
+        <fullName>Knovio- Demo Request (Livestreaming)</fullName>
+        <default>false</default>
+        <label>Knovio- Demo Request (Livestreaming)</label>
+    </customValue>
+    <customValue>
+        <fullName>Knovio- Demo Request</fullName>
+        <default>false</default>
+        <label>Knovio- Demo Request</label>
+    </customValue>
+    <customValue>
+        <fullName>Knovio- eBook Video Analytics</fullName>
+        <default>false</default>
+        <label>Knovio- eBook Video Analytics</label>
+    </customValue>
+    <customValue>
+        <fullName>Knovio- Request a Demo</fullName>
+        <default>false</default>
+        <label>Knovio- Request a Demo</label>
+    </customValue>
+    <customValue>
+        <fullName>Access the Free Webinar Recording</fullName>
+        <default>false</default>
+        <label>Access the Free Webinar Recording</label>
+    </customValue>
+    <customValue>
+        <fullName>Chargify Streamlink Landing Page</fullName>
+        <default>false</default>
+        <label>Chargify Streamlink Landing Page</label>
+    </customValue>
+    <customValue>
+        <fullName>Contact Sales</fullName>
+        <default>false</default>
+        <label>Contact Sales</label>
+    </customValue>
+    <customValue>
+        <fullName>Contact Us</fullName>
+        <default>false</default>
+        <label>Contact Us</label>
+    </customValue>
+    <customValue>
+        <fullName>IHS Referral Form</fullName>
+        <default>false</default>
+        <label>IHS Referral Form</label>
+    </customValue>
+    <customValue>
+        <fullName>IR Magazine 2022</fullName>
+        <default>false</default>
+        <label>IR Magazine 2022</label>
+    </customValue>
+    <customValue>
+        <fullName>Niri Conference 2022</fullName>
+        <default>false</default>
+        <label>Niri Conference 2022</label>
+    </customValue>
+    <customValue>
+        <fullName>Sign Up for the Free OE Passport Webinar</fullName>
+        <default>false</default>
+        <label>Sign Up for the Free OE Passport Webinar</label>
+    </customValue>
+    <customValue>
+        <fullName>WeConvene Integration Form</fullName>
+        <default>false</default>
+        <label>WeConvene Integration Form</label>
+    </customValue>
+    <customValue>
+        <fullName>Streamlink IR Form</fullName>
+        <default>false</default>
+        <label>Streamlink IR Form</label>
+    </customValue>
+    <customValue>
+        <fullName>Virtualize My Conference - Contact Us for a Free Demo</fullName>
+        <default>false</default>
+        <label>Virtualize My Conference - Contact Us for a Free Demo</label>
+    </customValue>
+    <customValue>
+        <fullName>Virtualize My Conference - Contact Us for a Free Demo (1)</fullName>
+        <default>false</default>
+        <label>Virtualize My Conference - Contact Us for a Free Demo (1)</label>
+    </customValue>
+    <customValue>
+        <fullName>Virtualize My Investor Relations 2020 - Schedule a Free Consultation</fullName>
+        <default>false</default>
+        <label>Virtualize My Investor Relations 2020 - Schedule a Free Consultation</label>
+    </customValue>
+    <customValue>
+        <fullName>Virtualize My Investor Relations Program - Contact Us for a Free Demo</fullName>
+        <default>false</default>
+        <label>Virtualize My Investor Relations Program - Contact Us for a Free Demo</label>
+    </customValue>
+    <customValue>
+        <fullName>[Download] Producing Virtual and Hybrid Events: A Guide</fullName>
+        <default>false</default>
+        <label>[Download] Producing Virtual and Hybrid Events: A Guide</label>
+    </customValue>
+    <customValue>
+        <fullName>[Download] State of Enterprise Video</fullName>
+        <default>false</default>
+        <label>[Download] State of Enterprise Video</label>
+    </customValue>
+    <customValue>
+        <fullName>[Download] The Practical Guide to a Successful Virtual Event</fullName>
+        <default>false</default>
+        <label>[Download] The Practical Guide to a Successful Virtual Event</label>
+    </customValue>
+    <customValue>
+        <fullName>[Download] The State of Virtual and Hybrid Events Research Report</fullName>
+        <default>false</default>
+        <label>[Download] The State of Virtual and Hybrid Events Research Report</label>
+    </customValue>
+    <customValue>
+        <fullName>[Download] Video-Enable Investor Communications</fullName>
+        <default>false</default>
+        <label>[Download] Video-Enable Investor Communications</label>
+    </customValue>
+    <customValue>
+        <fullName>Open Jobs - Apply Now </fullName>
+        <default>false</default>
+        <label>Open Jobs - Apply Now </label>
+    </customValue>
+    <masterLabel>Website Forms</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>My_Participants</fullName>
+    <columns>NAME</columns>
+    <columns>Meeting_Start_Date_Time__c</columns>
+    <columns>Meeting_Name__c</columns>
+    <columns>Account__c</columns>
+    <columns>IT_Contact__c</columns>
+    <columns>Status__c</columns>
+    <columns>Have_we_retested_the_connection__c</columns>
+    <columns>Retest_Results__c</columns>
+    <columns>URI__c</columns>
+    <columns>Room_Name__c</columns>
+    <columns>Admin_Contact__c</columns>
+    <columns>Assigned_User__c</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>Assigned_User__c</field>
+        <operation>equals</operation>
+        <value>John Shur</value>
+    </filters>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Assigned</value>
+    </filters>
+    <label>My Participants</label>
+</ListView>

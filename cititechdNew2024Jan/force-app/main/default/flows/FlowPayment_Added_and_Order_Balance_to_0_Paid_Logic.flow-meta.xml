@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <decisions>
+        <name>Payment_is_Created_and_Balance_is_0</name>
+        <label>Payment is Created and Balance is $0</label>
+        <locationX>182</locationX>
+        <locationY>335</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Yes</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Name</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Invoice__r.Order__r.Order_Payment_Balance__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <numberValue>0.0</numberValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Related_Order_Status</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <interviewLabel>Payment Added and Order Balance to $0 Paid Logic {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Payment Added and Order Balance to $0 Paid Logic</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Paid_Time_Stamp</name>
+        <label>Paid Time Stamp</label>
+        <locationX>50</locationX>
+        <locationY>695</locationY>
+        <inputAssignments>
+            <field>Paid_Date_Time_Stamp__c</field>
+            <value>
+                <elementReference>$Flow.CurrentDateTime</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record.Invoice__r.Order__r.Orders</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Paid_Time_Stamp</name>
+        <label>Update Paid Time Stamp</label>
+        <locationX>50</locationX>
+        <locationY>575</locationY>
+        <connector>
+            <targetReference>Paid_Time_Stamp</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Paid_Date_Time_Stamp__c</field>
+            <value>
+                <elementReference>$Flow.CurrentDateTime</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record.Order__r.Orders</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Related_Order_Status</name>
+        <label>Update Related Order Status</label>
+        <locationX>50</locationX>
+        <locationY>455</locationY>
+        <connector>
+            <targetReference>Update_Paid_Time_Stamp</targetReference>
+        </connector>
+        <filters>
+            <field>Status</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Invoice Sent</stringValue>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Status</field>
+            <value>
+                <stringValue>Paid</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record.Invoice__r.Order__r.Orders</inputReference>
+    </recordUpdates>
+    <startElementReference>Payment_is_Created_and_Balance_is_0</startElementReference>
+    <status>Active</status>
+</Flow>

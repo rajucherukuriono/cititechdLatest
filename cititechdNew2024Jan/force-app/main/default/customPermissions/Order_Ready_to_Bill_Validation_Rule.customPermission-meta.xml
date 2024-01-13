@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomPermission xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>See Val Rule: https://openexchange.lightning.force.com/lightning/setup/ObjectManager/Order/ValidationRules/03d1L000001YeQHQA0/view
+See Permission set: https://openexchange.lightning.force.com/lightning/setup/PermSets/page?address=%2F0PS1L0000000zlY</description>
+    <label>Order Ready to Bill Validation Rule</label>
+</CustomPermission>
